@@ -1,0 +1,61 @@
+MDF Database:  version 1.0
+MDF_INFO | Z2 | XC2C256-6-TQ144
+MACROCELL | 13 | 13 | wy<0>_MC
+ATTRIBUTES | 2323907330 | 0
+OUTPUTMC | 4 | 13 | 12 | 13 | 3 | 13 | 5 | 13 | 13
+INPUTS | 4 | wy<2>  | wy<1>  | wy<0>  | wy<3>
+INPUTMC | 4 | 13 | 5 | 13 | 12 | 13 | 13 | 13 | 3
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !wy<0> := wy<2> & wy<1>
+	# !wy<2> & !wy<1>
+	# wy<0> & !wy<3>;	// (3 pt, 4 inp)
+    wy<0>.CLK = zegar;	// CTC	(1 pt, 1 inp)
+   wy<0>.AR = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 13 | 5 | wy<2>_MC
+ATTRIBUTES | 2323907330 | 0
+OUTPUTMC | 4 | 13 | 12 | 13 | 3 | 13 | 5 | 13 | 13
+INPUTS | 3 | wy<0>  | wy<2>  | wy<3>
+INPUTMC | 3 | 13 | 13 | 13 | 5 | 13 | 3
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   !wy<2> := wy<0>
+	# !wy<2> & wy<3>;	// (2 pt, 3 inp)
+    wy<2>.CLK = zegar;	// CTC	(1 pt, 1 inp)
+   wy<2>.AR = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 13 | 3 | wy<3>_MC
+ATTRIBUTES | 2323907330 | 0
+OUTPUTMC | 3 | 13 | 3 | 13 | 5 | 13 | 13
+INPUTS | 4 | wy<2>  | wy<1>  | wy<0>  | wy<3>
+INPUTMC | 4 | 13 | 5 | 13 | 12 | 13 | 13 | 13 | 3
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   !wy<3> := !wy<2> & wy<1> & wy<0>
+	# wy<1> & wy<0> & wy<3>;	// (2 pt, 4 inp)
+    wy<3>.CLK = zegar;	// CTC	(1 pt, 1 inp)
+   wy<3>.AR = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 13 | 12 | wy<1>_MC
+ATTRIBUTES | 2307130118 | 0
+OUTPUTMC | 3 | 13 | 12 | 13 | 3 | 13 | 13
+INPUTS | 3 | wy<2>  | wy<0>  | wy<1>
+INPUTMC | 3 | 13 | 5 | 13 | 13 | 13 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   !wy<1> := wy<2> & !wy<0>
+	# !wy<1> & wy<0>;	// (2 pt, 3 inp)
+    wy<1>.CLK = zegar;	// CTC	(1 pt, 1 inp)
+   wy<1>.AP = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 1 | reset
+
+PIN | reset | 65536 | 16 | LVCMOS18 | 218 | 4 | 13 | 12 | 13 | 3 | 13 | 5 | 13 | 13
+PIN | zegar | 64 | 16 | LVCMOS18 | 62 | 0
+PIN | wy<0> | 536871040 | 0 | LVCMOS18 | 100
+PIN | wy<1> | 536871040 | 0 | LVCMOS18 | 102
+PIN | wy<2> | 536871040 | 0 | LVCMOS18 | 105
+PIN | wy<3> | 536871040 | 0 | LVCMOS18 | 107

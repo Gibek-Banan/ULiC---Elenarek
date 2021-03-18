@@ -1,0 +1,16 @@
+MDF Database:  version 1.0
+MDF_INFO | funkcja | XC2C256-6-TQ144
+MACROCELL | 11 | 1 | f_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | d  | b  | a  | c
+INPUTP | 4 | 3 | 8 | 12 | 5
+EQ | 3 | 
+   f = !d & !b
+	# d & a & b
+	# !a & b & c;	// (3 pt, 4 inp)
+
+PIN | a | 64 | 16 | LVCMOS18 | 12 | 1 | 11 | 1
+PIN | b | 64 | 16 | LVCMOS18 | 8 | 1 | 11 | 1
+PIN | c | 64 | 16 | LVCMOS18 | 5 | 1 | 11 | 1
+PIN | d | 64 | 16 | LVCMOS18 | 3 | 1 | 11 | 1
+PIN | f | 536871040 | 0 | LVCMOS18 | 152

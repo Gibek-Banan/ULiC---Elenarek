@@ -1,0 +1,57 @@
+MDF Database:  version 1.0
+MDF_INFO | liczenie | XC2C256-6-TQ144
+MACROCELL | 13 | 13 | wyj<0>_MC
+ATTRIBUTES | 2302935814 | 0
+OUTPUTMC | 3 | 13 | 5 | 13 | 3 | 13 | 12
+INPUTS | 0
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   !wyj<0>.T := Gnd;	// (0 pt, 0 inp)
+    wyj<0>.CLK = zegar;	// CTC	(1 pt, 1 inp)
+   wyj<0>.AP = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 1 | reset
+
+MACROCELL | 13 | 12 | wyj<1>_MC
+ATTRIBUTES | 2302935814 | 0
+OUTPUTMC | 3 | 13 | 5 | 13 | 3 | 13 | 12
+INPUTS | 4 | wyj<0>  | wyj<1>  | wyj<2>  | wyj<3>
+INPUTMC | 4 | 13 | 13 | 13 | 12 | 13 | 5 | 13 | 3
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   !wyj<1>.T := wyj<0>
+	# wyj<1> & wyj<2> & !wyj<3>;	// (2 pt, 4 inp)
+    wyj<1>.CLK = zegar;	// CTC	(1 pt, 1 inp)
+   wyj<1>.AP = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 1 | reset
+
+MACROCELL | 13 | 5 | wyj<2>_MC
+ATTRIBUTES | 2302935814 | 0
+OUTPUTMC | 2 | 13 | 3 | 13 | 12
+INPUTS | 2 | wyj<0>  | wyj<1>
+INPUTMC | 2 | 13 | 13 | 13 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   wyj<2>.T := !wyj<0> & !wyj<1>;	// (1 pt, 2 inp)
+    wyj<2>.CLK = zegar;	// CTC	(1 pt, 1 inp)
+   wyj<2>.AP = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 1 | reset
+
+MACROCELL | 13 | 3 | wyj<3>_MC
+ATTRIBUTES | 2302935814 | 0
+OUTPUTMC | 2 | 13 | 3 | 13 | 12
+INPUTS | 4 | wyj<0>  | wyj<1>  | wyj<2>  | wyj<3>
+INPUTMC | 4 | 13 | 13 | 13 | 12 | 13 | 5 | 13 | 3
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   wyj<3>.T := !wyj<0> & !wyj<1> & !wyj<2>
+	# !wyj<0> & wyj<1> & wyj<2> & !wyj<3>;	// (2 pt, 4 inp)
+    wyj<3>.CLK = zegar;	// CTC	(1 pt, 1 inp)
+   wyj<3>.AP = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 1 | reset
+
+PIN | reset | 65536 | 16 | LVCMOS18 | 218 | 4 | 13 | 13 | 13 | 5 | 13 | 3 | 13 | 12
+PIN | zegar | 64 | 16 | LVCMOS18 | 62 | 0
+PIN | wyj<0> | 536871040 | 0 | LVCMOS18 | 100
+PIN | wyj<1> | 536871040 | 0 | LVCMOS18 | 102
+PIN | wyj<2> | 536871040 | 0 | LVCMOS18 | 105
+PIN | wyj<3> | 536871040 | 0 | LVCMOS18 | 107

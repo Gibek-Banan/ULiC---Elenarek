@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Studia/ULiC/Zad1.3.2/RR.xst" -ofn "C:/Studia/ULiC/Zad1.3.2/RR.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc RR.ucf -p xc2c256-TQ144-6 RR.ngc RR.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RR.ngd 
+XSLTProcess RR_build.xml 
+tsim -intstyle ise RR RR.nga 
+taengine -intstyle ise -f RR -w --format html1 -l RR_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i RR 

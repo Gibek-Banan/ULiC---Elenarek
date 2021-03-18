@@ -1,0 +1,315 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C256144 | XC2C256-6-TQ144
+
+DEVICE | 2C256 | 2C256144 | 
+
+NETWORK | liczenie | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | reset_II | liczenie_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | reset | 560 | PI | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 9 | 5 | II_FSRINV
+NODE | reset_II/FSR- | 567 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | reset_II | 9 | 5 | II_FSRINV
+
+MACROCELL_INSTANCE | Inv+PrldHigh+Tff | wyj<0>_MC | liczenie_COPY_0_COPY_0 | 4864 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR14__ctinst/4 | 564 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | FOOBAR14__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | zegar_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/FSR- | 567 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | reset_II | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wyj<0>_MC.Q | 569 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<0>_MC.Q | wyj<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wyj<0>_MC.UIM | 574 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<0>_MC.Q | wyj<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wyj<0>_MC.SI | wyj<0>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wyj<0>_MC.D1 | 563 | ? | 0 | 0 | wyj<0>_MC | NULL | NULL | wyj<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wyj<0>_MC.D2 | 562 | ? | 0 | 0 | wyj<0>_MC | NULL | NULL | wyj<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | wyj<0>_MC.REG | wyj<0>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wyj<0>_MC.D | 561 | ? | 0 | 0 | wyj<0>_MC | NULL | NULL | wyj<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR14__ctinst/4 | 564 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | FOOBAR14__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | zegar_II/UIM
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+NODE | reset_II/FSR- | 567 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | reset_II | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wyj<0>_MC.Q | 568 | ? | 0 | 0 | wyj<0>_MC | NULL | NULL | wyj<0>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | zegar_II | liczenie_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | zegar | 565 | PI | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | zegar_II/UIM | 566 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | zegar_II | 0 | 5 | II_IMUX
+
+OUTPUT_INSTANCE | 0 | wyj<0> | liczenie_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wyj<0>_MC.Q | 569 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<0>_MC.Q | wyj<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wyj<0> | 570 | PO | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | wyj<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv+PrldHigh+Tff | wyj<1>_MC | liczenie_COPY_0_COPY_0 | 4864 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<0>_MC.UIM | 574 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<0>_MC.Q | wyj<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<1>_MC.UIM | 576 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<1>_MC.Q | wyj<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<2>_MC.UIM | 581 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<2>_MC.Q | wyj<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<3>_MC.UIM | 586 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<3>_MC.Q | wyj<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR14__ctinst/4 | 564 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | FOOBAR14__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | zegar_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/FSR- | 567 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | reset_II | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wyj<1>_MC.Q | 587 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<1>_MC.Q | wyj<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wyj<1>_MC.UIM | 576 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<1>_MC.Q | wyj<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wyj<1>_MC.SI | wyj<1>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<0>_MC.UIM | 574 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<0>_MC.Q | wyj<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<1>_MC.UIM | 576 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<1>_MC.Q | wyj<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<2>_MC.UIM | 581 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<2>_MC.Q | wyj<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<3>_MC.UIM | 586 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<3>_MC.Q | wyj<3>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wyj<1>_MC.D1 | 573 | ? | 0 | 0 | wyj<1>_MC | NULL | NULL | wyj<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wyj<1>_MC.D2 | 572 | ? | 0 | 0 | wyj<1>_MC | NULL | NULL | wyj<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | wyj<0>_MC.UIM
+SPPTERM | 3 | IV_TRUE | wyj<1>_MC.UIM | IV_TRUE | wyj<2>_MC.UIM | IV_FALSE | wyj<3>_MC.UIM
+
+SRFF_INSTANCE | wyj<1>_MC.REG | wyj<1>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wyj<1>_MC.D | 571 | ? | 0 | 0 | wyj<1>_MC | NULL | NULL | wyj<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR14__ctinst/4 | 564 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | FOOBAR14__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | zegar_II/UIM
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+NODE | reset_II/FSR- | 567 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | reset_II | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wyj<1>_MC.Q | 575 | ? | 0 | 0 | wyj<1>_MC | NULL | NULL | wyj<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldHigh+Tff | wyj<2>_MC | liczenie_COPY_0_COPY_0 | 4608 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<0>_MC.UIM | 574 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<0>_MC.Q | wyj<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<1>_MC.UIM | 576 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<1>_MC.Q | wyj<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR14__ctinst/4 | 564 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | FOOBAR14__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | zegar_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/FSR- | 567 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | reset_II | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wyj<2>_MC.Q | 589 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<2>_MC.Q | wyj<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wyj<2>_MC.UIM | 581 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<2>_MC.Q | wyj<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wyj<2>_MC.SI | wyj<2>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<0>_MC.UIM | 574 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<0>_MC.Q | wyj<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<1>_MC.UIM | 576 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<1>_MC.Q | wyj<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wyj<2>_MC.D1 | 578 | ? | 0 | 0 | wyj<2>_MC | NULL | NULL | wyj<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | wyj<0>_MC.UIM | IV_FALSE | wyj<1>_MC.UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wyj<2>_MC.D2 | 579 | ? | 0 | 0 | wyj<2>_MC | NULL | NULL | wyj<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | wyj<2>_MC.REG | wyj<2>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wyj<2>_MC.D | 577 | ? | 0 | 0 | wyj<2>_MC | NULL | NULL | wyj<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR14__ctinst/4 | 564 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | FOOBAR14__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | zegar_II/UIM
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+NODE | reset_II/FSR- | 567 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | reset_II | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wyj<2>_MC.Q | 580 | ? | 0 | 0 | wyj<2>_MC | NULL | NULL | wyj<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldHigh+Tff | wyj<3>_MC | liczenie_COPY_0_COPY_0 | 4608 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<0>_MC.UIM | 574 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<0>_MC.Q | wyj<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<1>_MC.UIM | 576 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<1>_MC.Q | wyj<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<2>_MC.UIM | 581 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<2>_MC.Q | wyj<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<3>_MC.UIM | 586 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<3>_MC.Q | wyj<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR14__ctinst/4 | 564 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | FOOBAR14__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | zegar_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/FSR- | 567 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | reset_II | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wyj<3>_MC.Q | 591 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<3>_MC.Q | wyj<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wyj<3>_MC.UIM | 586 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<3>_MC.Q | wyj<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wyj<3>_MC.SI | wyj<3>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<0>_MC.UIM | 574 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<0>_MC.Q | wyj<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<1>_MC.UIM | 576 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<1>_MC.Q | wyj<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<2>_MC.UIM | 581 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<2>_MC.Q | wyj<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wyj<3>_MC.UIM | 586 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<3>_MC.Q | wyj<3>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wyj<3>_MC.D1 | 584 | ? | 0 | 0 | wyj<3>_MC | NULL | NULL | wyj<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wyj<3>_MC.D2 | 583 | ? | 0 | 0 | wyj<3>_MC | NULL | NULL | wyj<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | wyj<0>_MC.UIM | IV_FALSE | wyj<1>_MC.UIM | IV_FALSE | wyj<2>_MC.UIM
+SPPTERM | 4 | IV_FALSE | wyj<0>_MC.UIM | IV_TRUE | wyj<1>_MC.UIM | IV_TRUE | wyj<2>_MC.UIM | IV_FALSE | wyj<3>_MC.UIM
+
+SRFF_INSTANCE | wyj<3>_MC.REG | wyj<3>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wyj<3>_MC.D | 582 | ? | 0 | 0 | wyj<3>_MC | NULL | NULL | wyj<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR14__ctinst/4 | 564 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | FOOBAR14__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | zegar_II/UIM
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+NODE | reset_II/FSR- | 567 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | reset_II | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wyj<3>_MC.Q | 585 | ? | 0 | 0 | wyj<3>_MC | NULL | NULL | wyj<3>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | wyj<1> | liczenie_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wyj<1>_MC.Q | 587 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<1>_MC.Q | wyj<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wyj<1> | 588 | PO | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | wyj<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | wyj<2> | liczenie_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wyj<2>_MC.Q | 589 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<2>_MC.Q | wyj<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wyj<2> | 590 | PO | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | wyj<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | wyj<3> | liczenie_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wyj<3>_MC.Q | 591 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | wyj<3>_MC.Q | wyj<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wyj<3> | 592 | PO | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | wyj<3> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 3 | NULL | 0 | reset_II | 1 | NULL | 0 | 143 | 51200
+
+FB_INSTANCE | FOOBAR2_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR3_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 12 | NULL | 0 | zegar_II | 1 | NULL | 0 | 39 | 50176
+
+FB_INSTANCE | FOOBAR7_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR10_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR11_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR12_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR13_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 4 | wyj<3>_MC | 1 | NULL | 0 | wyj<3> | 1 | 69 | 49152
+FBPIN | 6 | wyj<2>_MC | 1 | NULL | 0 | wyj<2> | 1 | 68 | 49152
+FBPIN | 13 | wyj<1>_MC | 1 | NULL | 0 | wyj<1> | 1 | 66 | 49152
+FBPIN | 14 | wyj<0>_MC | 1 | NULL | 0 | wyj<0> | 1 | 64 | 49152
+
+FB_INSTANCE | FOOBAR15_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR9_ | FOOBAR9__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR10_ | FOOBAR10__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR11_ | FOOBAR11__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR12_ | FOOBAR12__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR13_ | FOOBAR13__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR14_ | FOOBAR14__ctinst | liczenie_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | zegar_II/UIM | 566 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | zegar_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR14__ctinst/4 | 564 | ? | 0 | 0 | liczenie_COPY_0_COPY_0 | NULL | NULL | FOOBAR14__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | zegar_II/UIM
+
+CT_INSTANCE | FOOBAR15_ | FOOBAR15__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR16_ | FOOBAR16__ctinst | liczenie_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR14_ | 6
+PLA_TERM | 0 | 
+SPPTERM | 1 | IV_TRUE | wyj<0>_MC.UIM
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_TRUE | wyj<1>_MC.UIM | IV_TRUE | wyj<2>_MC.UIM | IV_FALSE | wyj<3>_MC.UIM
+PLA_TERM | 2 | 
+SPPTERM | 3 | IV_FALSE | wyj<0>_MC.UIM | IV_FALSE | wyj<1>_MC.UIM | IV_FALSE | wyj<2>_MC.UIM
+PLA_TERM | 3 | 
+SPPTERM | 4 | IV_FALSE | wyj<0>_MC.UIM | IV_TRUE | wyj<1>_MC.UIM | IV_TRUE | wyj<2>_MC.UIM | IV_FALSE | wyj<3>_MC.UIM
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | zegar_II/UIM
+PLA_TERM | 25 | 
+SPPTERM | 2 | IV_FALSE | wyj<0>_MC.UIM | IV_FALSE | wyj<1>_MC.UIM
+
+BUSINFO | WYJ<3:0> | 4 | 0 | 1 | wyj<0> | 3 | wyj<1> | 2 | wyj<2> | 1 | wyj<3> | 0
+
+IOSTD | LVCMOS18
+reset | LVCMOS18
+zegar | LVCMOS18
+wyj<0> | LVCMOS18
+wyj<1> | LVCMOS18
+wyj<2> | LVCMOS18
+wyj<3> | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR14_ | 3 | wyj<3>_MC.UIM | NULL | 4 | wyj<2>_MC.UIM | NULL | 5 | zegar | 39 | 6 | wyj<0>_MC.UIM | NULL | 9 | wyj<1>_MC.UIM | NULL
+
+FB_IMUX_INDEX | FOOBAR14_ | -1 | -1 | -1 | 395 | 397 | 61 | 405 | -1 | -1 | 404 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+
+GLOBAL_FSR | reset | 0 | 0

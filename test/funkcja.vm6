@@ -1,0 +1,167 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C256144 | XC2C256-6-TQ144
+
+DEVICE | 2C256 | 2C256144 | 
+
+NETWORK | funkcja | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | a_II | funkcja_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | a | 229 | PI | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | a_II/UIM | 237 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | a_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | b_II | funkcja_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | b | 230 | PI | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | b_II/UIM | 238 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | b_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | c_II | funkcja_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | c | 231 | PI | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | c_II/UIM | 239 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | c_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | d_II | funkcja_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | d | 232 | PI | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | d_II/UIM | 236 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | d_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | f_MC | funkcja_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | d_II/UIM | 236 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | d_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | b_II/UIM | 238 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | b_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | a_II/UIM | 237 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | a_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_II/UIM | 239 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | c_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | f_MC.Q | 241 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | f_MC.Q | f_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | f_MC.SI | f_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | d_II/UIM | 236 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | d_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | b_II/UIM | 238 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | b_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | a_II/UIM | 237 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | a_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_II/UIM | 239 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | c_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | f_MC.D1 | 235 | ? | 0 | 0 | f_MC | NULL | NULL | f_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | f_MC.D2 | 234 | ? | 0 | 0 | f_MC | NULL | NULL | f_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | d_II/UIM | IV_FALSE | b_II/UIM
+SPPTERM | 3 | IV_TRUE | d_II/UIM | IV_TRUE | a_II/UIM | IV_TRUE | b_II/UIM
+SPPTERM | 3 | IV_FALSE | a_II/UIM | IV_TRUE | b_II/UIM | IV_TRUE | c_II/UIM
+
+SRFF_INSTANCE | f_MC.REG | f_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | f_MC.D | 233 | ? | 0 | 0 | f_MC | NULL | NULL | f_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | f_MC.Q | 240 | ? | 0 | 0 | f_MC | NULL | NULL | f_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | f | funkcja_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | f_MC.Q | 241 | ? | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | f_MC.Q | f_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | f | 242 | PO | 0 | 0 | funkcja_COPY_0_COPY_0 | NULL | NULL | f | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR2_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 3 | NULL | 0 | d_II | 1 | NULL | 0 | 3 | 53248
+FBPIN | 5 | NULL | 0 | c_II | 1 | NULL | 0 | 5 | 53248
+FBPIN | 13 | NULL | 0 | b_II | 1 | NULL | 0 | 7 | 49152
+FBPIN | 15 | NULL | 0 | a_II | 1 | NULL | 0 | 10 | 49152
+
+FB_INSTANCE | FOOBAR3_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR7_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR10_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR11_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR12_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | f_MC | 1 | NULL | 0 | f | 1 | 100 | 49152
+
+FB_INSTANCE | FOOBAR13_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR15_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR9_ | FOOBAR9__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR10_ | FOOBAR10__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR11_ | FOOBAR11__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR12_ | FOOBAR12__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR13_ | FOOBAR13__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR14_ | FOOBAR14__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR15_ | FOOBAR15__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR16_ | FOOBAR16__ctinst | funkcja_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR12_ | 3
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_TRUE | d_II/UIM | IV_TRUE | a_II/UIM | IV_TRUE | b_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_FALSE | a_II/UIM | IV_TRUE | b_II/UIM | IV_TRUE | c_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 2 | IV_FALSE | d_II/UIM | IV_FALSE | b_II/UIM
+
+
+IOSTD | LVCMOS18
+a | LVCMOS18
+b | LVCMOS18
+c | LVCMOS18
+d | LVCMOS18
+f | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR12_ | 1 | d | 3 | 2 | a | 10 | 4 | b | 7 | 8 | c | 5
+
+FB_IMUX_INDEX | FOOBAR12_ | -1 | 13 | 20 | -1 | 18 | -1 | -1 | -1 | 15 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+

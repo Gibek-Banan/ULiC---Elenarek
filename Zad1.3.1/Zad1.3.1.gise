@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Zad1.3.1.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="SzR.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="SzR.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SzR.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="SzR.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="SzR.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="SzR.jed"/>
+    <file xil_pn:fileType="FILE_LFP" xil_pn:name="SzR.lfp"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="SzR.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SzR.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="SzR.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="SzR.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SzR.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="SzR.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SzR.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="SzR.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="SzR.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SzR.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SzR.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SzR.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SzR.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="SzR.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SzR.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SzR.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SzR_build.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="SzR_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SzR_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="SzR_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SzR_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SzR_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SzR_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1615748193" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1615748193">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1615748193" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1478469828539732829" xil_pn:start_ts="1615748193">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1615748200" xil_pn:in_ck="112065390031" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-847352814719891201" xil_pn:start_ts="1615748193">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="SzR.lso"/>
+      <outfile xil_pn:name="SzR.ngc"/>
+      <outfile xil_pn:name="SzR.ngr"/>
+      <outfile xil_pn:name="SzR.prj"/>
+      <outfile xil_pn:name="SzR.stx"/>
+      <outfile xil_pn:name="SzR.syr"/>
+      <outfile xil_pn:name="SzR.xst"/>
+      <outfile xil_pn:name="SzR_vhdl.prj"/>
+      <outfile xil_pn:name="SzR_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1615750201" xil_pn:in_ck="112065388779" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3473149289747024777" xil_pn:start_ts="1615750201">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1615750207" xil_pn:in_ck="-1654652988172994320" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1615750201">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SzR.bld"/>
+      <outfile xil_pn:name="SzR.ngd"/>
+      <outfile xil_pn:name="SzR_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1615750226" xil_pn:in_ck="112065381286" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="3183714604778919083" xil_pn:start_ts="1615750207">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SzR.chk"/>
+      <outfile xil_pn:name="SzR.cxt"/>
+      <outfile xil_pn:name="SzR.gyd"/>
+      <outfile xil_pn:name="SzR.log"/>
+      <outfile xil_pn:name="SzR.mfd"/>
+      <outfile xil_pn:name="SzR.nga"/>
+      <outfile xil_pn:name="SzR.pad"/>
+      <outfile xil_pn:name="SzR.pnx"/>
+      <outfile xil_pn:name="SzR.rpt"/>
+      <outfile xil_pn:name="SzR.vm6"/>
+      <outfile xil_pn:name="SzR.xml"/>
+      <outfile xil_pn:name="SzR_build.xml"/>
+      <outfile xil_pn:name="SzR_html"/>
+      <outfile xil_pn:name="SzR_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1615750229" xil_pn:in_ck="112065390150" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1615750226">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SzR.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1615750226" xil_pn:in_ck="112065390150" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1615750223">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

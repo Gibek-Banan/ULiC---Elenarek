@@ -1,0 +1,91 @@
+MDF Database:  version 1.0
+MDF_INFO | SzR | XC2C256-6-TQ144
+MACROCELL | 0 | 2 | wy<0>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 1 | 11 | 1
+INPUTS | 1 | we
+INPUTP | 1 | 10
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   wy<0> := we;	// (1 pt, 1 inp)
+    wy<0>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 11 | 1 | wy<1>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 1 | 9 | 13
+INPUTS | 1 | wy<0>
+INPUTMC | 1 | 0 | 2
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   wy<1> := wy<0>;	// (1 pt, 1 inp)
+    wy<1>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 9 | 13 | wy<2>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 1 | 9 | 5
+INPUTS | 1 | wy<1>
+INPUTMC | 1 | 11 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   wy<2> := wy<1>;	// (1 pt, 1 inp)
+    wy<2>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 9 | 5 | wy<3>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 1 | wy<2>
+INPUTMC | 1 | 9 | 13
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   wy<3> := wy<2>;	// (1 pt, 1 inp)
+    wy<3>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 8 | 1 | wy<4>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 1 | 8 | 5
+INPUTS | 1 | wy<3>
+INPUTMC | 1 | 9 | 5
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   wy<4> := wy<3>;	// (1 pt, 1 inp)
+    wy<4>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 8 | 5 | wy<5>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 1 | 8 | 12
+INPUTS | 1 | wy<4>
+INPUTMC | 1 | 8 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   wy<5> := wy<4>;	// (1 pt, 1 inp)
+    wy<5>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 8 | 12 | wy<6>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 1 | 8 | 14
+INPUTS | 1 | wy<5>
+INPUTMC | 1 | 8 | 5
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   wy<6> := wy<5>;	// (1 pt, 1 inp)
+    wy<6>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 8 | 14 | wy<7>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 1 | wy<6>
+INPUTMC | 1 | 8 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   wy<7> := wy<6>;	// (1 pt, 1 inp)
+    wy<7>.CLK = clock;	// CTC	(1 pt, 1 inp)
+
+PIN | clock | 64 | 16 | LVCMOS18 | 62 | 0
+PIN | we | 64 | 16 | LVCMOS18 | 10 | 1 | 0 | 2
+PIN | wy<0> | 536871040 | 0 | LVCMOS18 | 218
+PIN | wy<1> | 536871040 | 0 | LVCMOS18 | 152
+PIN | wy<2> | 536871040 | 0 | LVCMOS18 | 156
+PIN | wy<3> | 536871040 | 0 | LVCMOS18 | 160
+PIN | wy<4> | 536871040 | 0 | LVCMOS18 | 169
+PIN | wy<5> | 536871040 | 0 | LVCMOS18 | 173
+PIN | wy<6> | 536871040 | 0 | LVCMOS18 | 176
+PIN | wy<7> | 536871040 | 0 | LVCMOS18 | 178
