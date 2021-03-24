@@ -5,22 +5,28 @@
 </td></tr><tr><td>
 ********** Mapped Logic **********
 </td></tr><tr><td>
-FDCPE_wy0: FDCPE port map (wy(0),wy_D(0),zegar,NOT reset,'0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wy_D(0) <= NOT (((wy(2) AND wy(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wy(2) AND NOT wy(1))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wy(0) AND NOT wy(3))));
+FTCPE_licz1: FTCPE port map (licz(1),NOT wy(0),zegar,NOT reset,'0','1');
 </td></tr><tr><td>
-FDCPE_wy1: FDCPE port map (wy(1),wy_D(1),zegar,'0',NOT reset,'1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wy_D(1) <= NOT (((wy(2) AND NOT wy(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wy(1) AND wy(0))));
+FTCPE_licz2: FTCPE port map (licz(2),licz_T(2),zegar,NOT reset,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;licz_T(2) <= (NOT wy(0) AND licz(1));
 </td></tr><tr><td>
-FDCPE_wy2: FDCPE port map (wy(2),wy_D(2),zegar,NOT reset,'0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wy_D(2) <= NOT (((wy(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wy(2) AND wy(3))));
+FTCPE_licz3: FTCPE port map (licz(3),licz_T(3),zegar,'0',NOT reset,'1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;licz_T(3) <= ((NOT wy(0) AND licz(1) AND licz(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wy(0) AND NOT licz(1) AND NOT licz(2) AND NOT licz(3)));
 </td></tr><tr><td>
-FDCPE_wy3: FDCPE port map (wy(3),wy_D(3),zegar,NOT reset,'0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wy_D(3) <= NOT (((NOT wy(2) AND wy(1) AND wy(0))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wy(1) AND wy(0) AND wy(3))));
+FTCPE_wy0: FTCPE port map (wy(0),'0',zegar,NOT reset,'0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+wy(1) <= NOT (((wy(0) AND licz(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wy(0) AND NOT licz(1))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wy(2) <= ((licz(1) AND licz(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT licz(1) AND NOT licz(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wy(3) <= ((licz(2) AND licz(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT licz(2) AND NOT licz(3)));
 </td></tr><tr><td>
 </td></tr><tr><td>
 Register Legend:

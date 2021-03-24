@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-03-14T20:31:05</DateModified>
+  <DateModified>2021-03-24T18:36:15</DateModified>
   <ModuleName>RR</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Studia/ULiC/Zad1.3.2/iseconfig/RR.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Studia/ULiC/Zad1.3.2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Studia/ULiC/Zad1.3.2\</ImplementationReportsDirectory>
   <DateInitialized>2021-03-14T19:39:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

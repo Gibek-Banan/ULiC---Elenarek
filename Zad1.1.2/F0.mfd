@@ -1,0 +1,16 @@
+MDF Database:  version 1.0
+MDF_INFO | F0 | XC2C256-6-TQ144
+MACROCELL | 9 | 5 | y_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | a3  | a0  | a1  | a2
+INPUTP | 4 | 12 | 3 | 5 | 8
+EQ | 3 | 
+   y = a3 & !a0
+	# !a3 & !a1
+	# !a0 & a2;	// (3 pt, 4 inp)
+
+PIN | a0 | 64 | 16 | LVCMOS18 | 3 | 1 | 9 | 5
+PIN | a1 | 64 | 16 | LVCMOS18 | 5 | 1 | 9 | 5
+PIN | a2 | 64 | 16 | LVCMOS18 | 8 | 1 | 9 | 5
+PIN | a3 | 64 | 16 | LVCMOS18 | 12 | 1 | 9 | 5
+PIN | y | 536871040 | 0 | LVCMOS18 | 160

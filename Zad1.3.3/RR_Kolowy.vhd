@@ -17,17 +17,15 @@
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
+--Nasze:
+--SW1 gdy 1 wprowadza dane równolegle do rejestru z wejœæ zewnêtrznych, gdy 0 przesuwa je
+--w lewo realizuj¹c rejestr ko³owy ( wartoœci kr¹¿¹ w takt SW0)
+
+--Pawel_Daniel:
+--SW1 gdy 1 wprowadza dane równolegle do rejestru z wejœæ zewnêtrznych, gdy 0 przesuwa je
+--w lewo wprowadzaj¹c wartoœæ 0 na najm³odszy bit rejestr. 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity RR_Kolowy is
     Port ( clock : in  STD_LOGIC;
@@ -45,14 +43,14 @@ begin
 				if SW1 = '1' then
 					rej_wew<=we;
 				else
-					rej_wew(0)<=rej_wew(1);
-					rej_wew(1)<=rej_wew(2);
-					rej_wew(2)<=rej_wew(3);
-					rej_wew(3)<=rej_wew(4);
-					rej_wew(4)<=rej_wew(5);
-					rej_wew(5)<=rej_wew(6);
-					rej_wew(6)<=rej_wew(7);
 					rej_wew(7)<=rej_wew(0);
+					rej_wew(6)<=rej_wew(7);
+					rej_wew(5)<=rej_wew(6);
+					rej_wew(4)<=rej_wew(5);
+					rej_wew(3)<=rej_wew(4);
+					rej_wew(2)<=rej_wew(3);
+					rej_wew(1)<=rej_wew(2);
+					rej_wew(0)<=rej_wew(1);
 				end if;
 			end if;
 	end process;

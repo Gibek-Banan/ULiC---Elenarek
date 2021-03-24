@@ -3,7 +3,7 @@
  
 cpldfit:  version P.20131013                        Xilinx Inc.
                                   Fitter Report
-Design Name: Z2                                  Date:  3-12-2021,  2:39PM
+Design Name: Z2                                  Date:  3-24-2021,  6:32PM
 Device Used: XC2C256-6-TQ144
 Fitting Status: Successful
 
@@ -11,13 +11,13 @@ Fitting Status: Successful
 
 Macrocells     Product Terms    Function Block   Registers      Pins           
 Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
-4  /256 (  2%) 10  /896  (  1%) 5   /640  (  1%) 4  /256 (  2%) 6  /118 (  5%)
+7  /256 (  3%) 12  /896  (  1%) 10  /640  (  2%) 4  /256 (  2%) 6  /118 (  5%)
 
 ** Function Block Resources **
 
 Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
 Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
-FB1       0/16      0/40     0/56     0/ 6    0/1      0/1      0/1      0/1
+FB1       3/16      5/40     5/56     0/ 6    1/1*     0/1      0/1      0/1
 FB2       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB3       0/16      0/40     0/56     0/ 6    0/1      0/1      0/1      0/1
 FB4       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
@@ -30,11 +30,11 @@ FB10      0/16      0/40     0/56     0/ 9    0/1      0/1      0/1      0/1
 FB11      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB12      0/16      0/40     0/56     0/ 6    0/1      0/1      0/1      0/1
 FB13      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
-FB14      4/16      5/40    10/56     4/ 8    1/1*     0/1      0/1      0/1
+FB14      4/16      5/40     7/56     4/ 8    1/1*     0/1      0/1      0/1
 FB15      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
 FB16      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
          -----    -------  -------   -----    ---      ---      ---      ---
-Total     4/256     5/640   10/896    4/118   1/16     0/16     0/16     0/16
+Total     7/256    10/640   12/896    4/118   2/16     0/16     0/16     0/16
 
 CTC - Control Term Clock
 CTR - Control Term Reset
@@ -75,10 +75,18 @@ WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
 
 Signal              Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
 Name                Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
-wy<3>               3     5     1    FB14_4  69    I/O       O       LVCMOS18           FAST DFF     RESET
-wy<2>               3     4     1    FB14_6  68    I/O       O       LVCMOS18           FAST DFF     RESET
-wy<1>               3     4     1    FB14_13 66    I/O       O       LVCMOS18           FAST DFF/S   SET
-wy<0>               4     5     1    FB14_14 64    I/O       O       LVCMOS18           FAST DFF     RESET
+wy<3>               2     2     1    FB14_4  69    I/O       O       LVCMOS18           FAST         
+wy<2>               2     2     1    FB14_6  68    I/O       O       LVCMOS18           FAST         
+wy<1>               2     2     1    FB14_13 66    I/O       O       LVCMOS18           FAST         
+wy<0>               1     1     1    FB14_14 64    I/O       O       LVCMOS18           FAST TFF     RESET
+
+** 3 Buried Nodes **
+
+Signal              Total Total Loc     Reg     Reg Init
+Name                Pts   Inps          Use     State
+licz<3>             3     5     FB1_11  TFF/S   SET
+licz<2>             2     3     FB1_15  TFF     RESET
+licz<1>             2     2     FB1_16  TFF     RESET
 
 ** 2 Inputs **
 
@@ -113,9 +121,9 @@ Pin Type/Use - I  - Input             GCK - Global clock
 Pin No.      - ~  - User Assigned
 *********************************** FB1  ***********************************
 This function block is part of I/O Bank number:               2
-Number of function block inputs used/remaining:               0/40
-Number of function block control terms used/remaining:        0/4
-Number of PLA product terms used/remaining:                   0/56
+Number of function block inputs used/remaining:               5/35
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   5/51
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
 (unused)                      0     FB1_1        (b)           
@@ -128,12 +136,24 @@ Name                          Pt            No.  Type    Use
 (unused)                      0     FB1_8        (b)           
 (unused)                      0     FB1_9        (b)           
 (unused)                      0     FB1_10       (b)           
-(unused)                      0     FB1_11       (b)           
+licz<3>                       3     FB1_11       (b)     (b)    +          
 (unused)                      0     FB1_12  139  I/O           
 (unused)                      0     FB1_13  138  I/O           
 (unused)                      0     FB1_14  137  I/O           
-(unused)                      0     FB1_15       (b)           
-(unused)                      0     FB1_16       (b)           
+licz<2>                       2     FB1_15       (b)     (b)    +          
+licz<1>                       2     FB1_16       (b)     (b)    +          
+
+Signals Used by Logic in Function Block
+  1: licz<1>            3: licz<3>            5: zegar 
+  2: licz<2>            4: wy<0>            
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+licz<3>           XXXXX................................... 5       
+licz<2>           X..XX................................... 3       
+licz<1>           ...XX................................... 2       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
 *********************************** FB2  ***********************************
 This function block is part of I/O Bank number:               2
 Number of function block inputs used/remaining:               0/40
@@ -414,36 +434,36 @@ Name                          Pt            No.  Type    Use
 This function block is part of I/O Bank number:               1
 Number of function block inputs used/remaining:               5/35
 Number of function block control terms used/remaining:        1/3
-Number of PLA product terms used/remaining:                   10/46
+Number of PLA product terms used/remaining:                   7/49
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
 (unused)                      0     FB14_1  74   I/O           
 (unused)                      0     FB14_2  71   I/O           
 (unused)                      0     FB14_3  70   I/O           
-wy<3>                         3     FB14_4  69   I/O     O      +          
+wy<3>                         2     FB14_4  69   I/O     O                 
 (unused)                      0     FB14_5       (b)           
-wy<2>                         3     FB14_6  68   I/O     O      +          
+wy<2>                         2     FB14_6  68   I/O     O                 
 (unused)                      0     FB14_7       (b)           
 (unused)                      0     FB14_8       (b)           
 (unused)                      0     FB14_9       (b)           
 (unused)                      0     FB14_10      (b)           
 (unused)                      0     FB14_11      (b)           
 (unused)                      0     FB14_12      (b)           
-wy<1>                         3     FB14_13 66   I/O     O      +          
-wy<0>                         4     FB14_14 64   I/O     O      +          
+wy<1>                         2     FB14_13 66   I/O     O                 
+wy<0>                         1     FB14_14 64   I/O     O      +          
 (unused)                      0     FB14_15      (b)           
 (unused)                      0     FB14_16 61   I/O           
 
 Signals Used by Logic in Function Block
-  1: wy<0>              3: wy<2>              5: zegar 
-  2: wy<1>              4: wy<3>            
+  1: licz<1>            3: licz<3>            5: zegar 
+  2: licz<2>            4: wy<0>            
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-wy<3>             XXXXX................................... 5       
-wy<2>             X.XXX................................... 4       
-wy<1>             XXX.X................................... 4       
-wy<0>             XXXXX................................... 5       
+wy<3>             .XX..................................... 2       
+wy<2>             XX...................................... 2       
+wy<1>             X..X.................................... 2       
+wy<0>             ....X................................... 1       
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB15 ***********************************
@@ -496,22 +516,28 @@ Name                          Pt            No.  Type    Use
 
 ********** Mapped Logic **********
 
-FDCPE_wy0: FDCPE port map (wy(0),wy_D(0),zegar,NOT reset,'0','1');
-wy_D(0) <= NOT (((wy(2) AND wy(1))
-	OR (NOT wy(2) AND NOT wy(1))
-	OR (wy(0) AND NOT wy(3))));
+FTCPE_licz1: FTCPE port map (licz(1),NOT wy(0),zegar,NOT reset,'0','1');
 
-FDCPE_wy1: FDCPE port map (wy(1),wy_D(1),zegar,'0',NOT reset,'1');
-wy_D(1) <= NOT (((wy(2) AND NOT wy(0))
-	OR (NOT wy(1) AND wy(0))));
+FTCPE_licz2: FTCPE port map (licz(2),licz_T(2),zegar,NOT reset,'0','1');
+licz_T(2) <= (NOT wy(0) AND licz(1));
 
-FDCPE_wy2: FDCPE port map (wy(2),wy_D(2),zegar,NOT reset,'0','1');
-wy_D(2) <= NOT (((wy(0))
-	OR (NOT wy(2) AND wy(3))));
+FTCPE_licz3: FTCPE port map (licz(3),licz_T(3),zegar,'0',NOT reset,'1');
+licz_T(3) <= ((NOT wy(0) AND licz(1) AND licz(2))
+	OR (wy(0) AND NOT licz(1) AND NOT licz(2) AND NOT licz(3)));
 
-FDCPE_wy3: FDCPE port map (wy(3),wy_D(3),zegar,NOT reset,'0','1');
-wy_D(3) <= NOT (((NOT wy(2) AND wy(1) AND wy(0))
-	OR (wy(1) AND wy(0) AND wy(3))));
+FTCPE_wy0: FTCPE port map (wy(0),'0',zegar,NOT reset,'0','1');
+
+
+wy(1) <= NOT (((wy(0) AND licz(1))
+	OR (NOT wy(0) AND NOT licz(1))));
+
+
+wy(2) <= ((licz(1) AND licz(2))
+	OR (NOT licz(1) AND NOT licz(2)));
+
+
+wy(3) <= ((licz(2) AND licz(3))
+	OR (NOT licz(2) AND NOT licz(3)));
 
 
 Register Legend:

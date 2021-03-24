@@ -73,6 +73,8 @@
     <transform xil_pn:end_ts="1615748200" xil_pn:in_ck="112065390031" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-847352814719891201" xil_pn:start_ts="1615748193">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="SzR.lso"/>
       <outfile xil_pn:name="SzR.ngc"/>
@@ -94,6 +96,7 @@
     <transform xil_pn:end_ts="1615750207" xil_pn:in_ck="-1654652988172994320" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1615750201">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SzR.bld"/>
       <outfile xil_pn:name="SzR.ngd"/>
       <outfile xil_pn:name="SzR_ngdbuild.xrpt"/>
@@ -103,6 +106,7 @@
     <transform xil_pn:end_ts="1615750226" xil_pn:in_ck="112065381286" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="3183714604778919083" xil_pn:start_ts="1615750207">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SzR.chk"/>
       <outfile xil_pn:name="SzR.cxt"/>
       <outfile xil_pn:name="SzR.gyd"/>
@@ -121,12 +125,14 @@
     <transform xil_pn:end_ts="1615750229" xil_pn:in_ck="112065390150" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1615750226">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SzR.jed"/>
     </transform>
     <transform xil_pn:end_ts="1615750226" xil_pn:in_ck="112065390150" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1615750223">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
   </transforms>
 

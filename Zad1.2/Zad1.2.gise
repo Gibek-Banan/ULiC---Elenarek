@@ -43,6 +43,8 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Z2.rpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Z2.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Z2.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Z2.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Z2.tspec"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="Z2.vm6"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Z2.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Z2.xst"/>
@@ -71,9 +73,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1615556379" xil_pn:in_ck="3583266556" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-6618469545981579348" xil_pn:start_ts="1615556373">
+    <transform xil_pn:end_ts="1616607126" xil_pn:in_ck="3583266556" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-6618469545981579348" xil_pn:start_ts="1616607119">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="Z2.lso"/>
       <outfile xil_pn:name="Z2.ngc"/>
@@ -92,18 +96,21 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1615556397" xil_pn:in_ck="4627662689867353194" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1615556392">
+    <transform xil_pn:end_ts="1616607134" xil_pn:in_ck="4627662689867353194" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1616607129">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Z2.bld"/>
       <outfile xil_pn:name="Z2.ngd"/>
       <outfile xil_pn:name="Z2_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1615556410" xil_pn:in_ck="3583257811" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="-5071994621810176891" xil_pn:start_ts="1615556397">
+    <transform xil_pn:end_ts="1616607142" xil_pn:in_ck="3583257811" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="-5071994621810176891" xil_pn:start_ts="1616607134">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Z2.chk"/>
       <outfile xil_pn:name="Z2.cxt"/>
       <outfile xil_pn:name="Z2.gyd"/>
@@ -113,21 +120,27 @@
       <outfile xil_pn:name="Z2.pad"/>
       <outfile xil_pn:name="Z2.pnx"/>
       <outfile xil_pn:name="Z2.rpt"/>
+      <outfile xil_pn:name="Z2.tim"/>
+      <outfile xil_pn:name="Z2.tspec"/>
       <outfile xil_pn:name="Z2.vm6"/>
       <outfile xil_pn:name="Z2.xml"/>
       <outfile xil_pn:name="Z2_build.xml"/>
       <outfile xil_pn:name="Z2_html"/>
       <outfile xil_pn:name="Z2_pad.csv"/>
     </transform>
-    <transform xil_pn:end_ts="1615556412" xil_pn:in_ck="3583266675" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1615556410">
+    <transform xil_pn:end_ts="1616607144" xil_pn:in_ck="3583266675" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1616607142">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Z2.jed"/>
     </transform>
     <transform xil_pn:end_ts="1615556410" xil_pn:in_ck="3583266675" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1615556408">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
   </transforms>
 

@@ -1,6 +1,6 @@
 V3 3
-FL C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.vhd 2021/03/16.09:49:01 P.20131013
-EN work/RR_Kolowy 1615885534 FL C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.vhd \
+FL C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.vhd 2021/03/24.18:43:16 P.20131013
+EN work/RR_Kolowy 1616608069 FL C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/RR_Kolowy/Behavioral 1615885535 \
-      FL C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.vhd EN work/RR_Kolowy 1615885534
+AR work/RR_Kolowy/Behavioral 1616608070 \
+      FL C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.vhd EN work/RR_Kolowy 1616608069

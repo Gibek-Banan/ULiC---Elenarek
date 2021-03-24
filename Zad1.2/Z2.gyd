@@ -12,7 +12,8 @@ wy<3> S:PIN69
 ;The remaining section of the .gyd file is for documentation purposes only.
 ;It shows where your internal equations were placed in the last successful fit.
 
-
+PARTITION FB1_11 licz<3>
+PARTITION FB1_15 licz<2> licz<1>
 
 
 

@@ -1,5 +1,7 @@
 V3 3
-FL C:/Studia/ULiC/Zad1.2/Z2.vhd 2021/03/12.14:39:25 P.20131013
-EN work/Z2 1615556374 FL C:/Studia/ULiC/Zad1.2/Z2.vhd PB ieee/std_logic_1164 1381692176
-AR work/Z2/Behavioral 1615556375 \
-      FL C:/Studia/ULiC/Zad1.2/Z2.vhd EN work/Z2 1615556374
+FL C:/Studia/ULiC/Zad1.2/Z2.vhd 2021/03/24.18:31:53 P.20131013
+EN work/Z2 1616607121 FL C:/Studia/ULiC/Zad1.2/Z2.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/Z2/Behavioral 1616607122 \
+      FL C:/Studia/ULiC/Zad1.2/Z2.vhd EN work/Z2 1616607121

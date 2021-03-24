@@ -3,9 +3,9 @@
 <script src="paths.js"></script><script src="eqns.js"></script><script>
       var design = "Z2";
       var device = "XC2C256";
-      signals = new Array("wy0_SPECSIG","wy1_SPECSIG","wy2_SPECSIG","wy3_SPECSIG");
-      sigNegs = new Array("ON","ON","ON","ON");
-      sigTypes = new Array("DFF","DFFS_SPECSIG","DFF","DFF");
+      signals = new Array("licz1_SPECSIG","licz2_SPECSIG","licz3_SPECSIG","wy0_SPECSIG","wy1_SPECSIG","wy2_SPECSIG","wy3_SPECSIG");
+      sigNegs = new Array("OFF","OFF","OFF","ON","ON","OFF","OFF");
+      sigTypes = new Array("TFF","TFF","TFFS_SPECSIG","TFF","","","");
 
       
            iostyle["reset"]=new Array("KPR");
@@ -20,47 +20,63 @@
       
         specSig["wy0_SPECSIG"]=new Array("wy<0>");
       
-        specSig["DFFS_SPECSIG"]=new Array("DFF/S");
+        specSig["licz3_SPECSIG"]=new Array("licz<3>");
       
-            pterms["FB14_0"]=new Array("wy2_SPECSIG","wy1_SPECSIG");
+        specSig["licz2_SPECSIG"]=new Array("licz<2>");
+      
+        specSig["licz1_SPECSIG"]=new Array("licz<1>");
+      
+        specSig["TFFS_SPECSIG"]=new Array("TFF/S");
+      
+            pterms["FB1_0"]=new Array("/wy0_SPECSIG","licz1_SPECSIG","licz2_SPECSIG");
           
-            pterms["FB14_1"]=new Array("/wy2_SPECSIG","/wy1_SPECSIG");
+            pterms["FB1_1"]=new Array("wy0_SPECSIG","/licz1_SPECSIG","/licz2_SPECSIG","/licz3_SPECSIG");
           
-            pterms["FB14_2"]=new Array("wy0_SPECSIG","/wy3_SPECSIG");
+            pterms["FB1_4"]=new Array("zegar");
           
-            pterms["FB14_3"]=new Array("/wy2_SPECSIG","wy1_SPECSIG","wy0_SPECSIG");
+            pterms["FB1_52"]=new Array("/wy0_SPECSIG","licz1_SPECSIG");
+          
+            pterms["FB1_55"]=new Array("/wy0_SPECSIG");
+          
+            pterms["FB14_0"]=new Array("wy0_SPECSIG","licz1_SPECSIG");
+          
+            pterms["FB14_1"]=new Array("/wy0_SPECSIG","/licz1_SPECSIG");
+          
+            pterms["FB14_2"]=new Array("licz1_SPECSIG","licz2_SPECSIG");
+          
+            pterms["FB14_3"]=new Array("/licz1_SPECSIG","/licz2_SPECSIG");
           
             pterms["FB14_4"]=new Array("zegar");
           
-            pterms["FB14_5"]=new Array("wy1_SPECSIG","wy0_SPECSIG","wy3_SPECSIG");
+            pterms["FB14_5"]=new Array("licz2_SPECSIG","licz3_SPECSIG");
           
-            pterms["FB14_6"]=new Array("/wy1_SPECSIG","wy0_SPECSIG");
+            pterms["FB14_6"]=new Array("/licz2_SPECSIG","/licz3_SPECSIG");
           
-            pterms["FB14_7"]=new Array("wy2_SPECSIG","/wy0_SPECSIG");
+          d2["licz3_SPECSIG"]=new Array("FB1_0","FB1_1");
           
-            pterms["FB14_8"]=new Array("/wy2_SPECSIG","wy3_SPECSIG");
+              clk["licz3_SPECSIG"]=new Array("FB1_4");
+              setNegs["licz3_SPECSIG"]=1;
+              gblset["licz3_SPECSIG"]=new Array("reset");
+            prld["licz3_SPECSIG"]="VCC";
+          d1["licz2_SPECSIG"]=new Array("FB1_52");
           
-            pterms["FB14_9"]=new Array("wy0_SPECSIG");
+              clk["licz2_SPECSIG"]=new Array("FB1_4");
+              rstNegs["licz2_SPECSIG"]=1;
+              gblrst["licz2_SPECSIG"]=new Array("reset");
+            prld["licz2_SPECSIG"]="GND";
+          d1["licz1_SPECSIG"]=new Array("FB1_55");
           
-          d2["wy3_SPECSIG"]=new Array("FB14_3","FB14_5");
+              clk["licz1_SPECSIG"]=new Array("FB1_4");
+              rstNegs["licz1_SPECSIG"]=1;
+              gblrst["licz1_SPECSIG"]=new Array("reset");
+            prld["licz1_SPECSIG"]="GND";
+          d2["wy3_SPECSIG"]=new Array("FB14_5","FB14_6");
           
-              clk["wy3_SPECSIG"]=new Array("FB14_4");
-              rstNegs["wy3_SPECSIG"]=1;
-              gblrst["wy3_SPECSIG"]=new Array("reset");
-            prld["wy3_SPECSIG"]="GND";
-          d2["wy2_SPECSIG"]=new Array("FB14_9","FB14_8");
+          d2["wy2_SPECSIG"]=new Array("FB14_2","FB14_3");
           
-              clk["wy2_SPECSIG"]=new Array("FB14_4");
-              rstNegs["wy2_SPECSIG"]=1;
-              gblrst["wy2_SPECSIG"]=new Array("reset");
-            prld["wy2_SPECSIG"]="GND";
-          d2["wy1_SPECSIG"]=new Array("FB14_7","FB14_6");
+          d2["wy1_SPECSIG"]=new Array("FB14_0","FB14_1");
           
-              clk["wy1_SPECSIG"]=new Array("FB14_4");
-              setNegs["wy1_SPECSIG"]=1;
-              gblset["wy1_SPECSIG"]=new Array("reset");
-            prld["wy1_SPECSIG"]="VCC";
-          d2["wy0_SPECSIG"]=new Array("FB14_0","FB14_1","FB14_2");
+          d2["wy0_SPECSIG"]=new Array("GND");
           
               clk["wy0_SPECSIG"]=new Array("FB14_4");
               rstNegs["wy0_SPECSIG"]=1;

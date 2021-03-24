@@ -3,3 +3,4 @@ xst -intstyle ise -ifn "C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.xst" -ofn "C:/Studia/U
 xst -intstyle ise -ifn "C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.xst" -ofn "C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.syr" 
 xst -intstyle ise -ifn "C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.xst" -ofn "C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.syr" 
 xst -intstyle ise -ifn "C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.xst" -ofn "C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.syr" 
+xst -intstyle ise -ifn "C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.xst" -ofn "C:/Studia/ULiC/Zad1.3.3/RR_Kolowy.syr" 

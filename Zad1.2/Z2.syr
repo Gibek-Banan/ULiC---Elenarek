@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: Z2.prj
 
@@ -99,9 +99,11 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <Z2>.
     Related source file is "C:/Studia/ULiC/Zad1.2/Z2.vhd".
-    Found 4-bit register for signal <licz>.
+    Found 4-bit up counter for signal <licz>.
+    Found 3-bit xor2 for signal <przesuniecie<3:1>>.
     Summary:
-	inferred   4 D-type flip-flop(s).
+	inferred   1 Counter(s).
+	inferred   3 Xor(s).
 Unit <Z2> synthesized.
 
 
@@ -109,8 +111,10 @@ Unit <Z2> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 4
- 1-bit register                                        : 4
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
 
 =========================================================================
 
@@ -123,8 +127,8 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 4
- Flip-Flops                                            : 4
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
 
 =========================================================================
 
@@ -133,10 +137,10 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <Z2> ...
+  implementation constraint: INIT=r	 : licz_2
   implementation constraint: INIT=r	 : licz_1
-  implementation constraint: INIT=s	 : licz_2
-  implementation constraint: INIT=s	 : licz_3
   implementation constraint: INIT=s	 : licz_0
+  implementation constraint: INIT=s	 : licz_3
 
 =========================================================================
 *                           Partition Report                            *
@@ -168,27 +172,27 @@ Design Statistics
 # IOs                              : 6
 
 Cell Usage :
-# BELS                             : 26
-#      AND2                        : 6
-#      AND3                        : 1
-#      INV                         : 15
-#      OR2                         : 3
-#      OR3                         : 1
+# BELS                             : 25
+#      AND2                        : 4
+#      AND4                        : 1
+#      INV                         : 12
+#      OR2                         : 2
+#      XOR2                        : 6
 # FlipFlops/Latches                : 4
-#      FDC                         : 1
-#      FDP                         : 3
+#      FDC                         : 2
+#      FDP                         : 2
 # IO Buffers                       : 6
 #      IBUF                        : 2
 #      OBUF                        : 4
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.74 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.08 secs
  
 --> 
 
-Total memory usage is 4506108 kilobytes
+Total memory usage is 4497588 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
