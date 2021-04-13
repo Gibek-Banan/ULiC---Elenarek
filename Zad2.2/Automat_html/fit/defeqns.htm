@@ -1,0 +1,39 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_stan_FSM_FFd1: FDCPE port map (stan_FSM_FFd1,stan_FSM_FFd1_D,clk,NOT reset,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stan_FSM_FFd1_D <= ((stan_FSM_FFd2 AND NOT k AND stan_FSM_FFd3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT stan_FSM_FFd2 AND NOT k AND stan_FSM_FFd1));
+</td></tr><tr><td>
+FDCPE_stan_FSM_FFd2: FDCPE port map (stan_FSM_FFd2,stan_FSM_FFd2_D,clk,NOT reset,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stan_FSM_FFd2_D <= ((NOT stan_FSM_FFd2 AND NOT k AND stan_FSM_FFd3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT k AND stan_FSM_FFd3 AND stan_FSM_FFd1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (stan_FSM_FFd2 AND k AND NOT stan_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT stan_FSM_FFd1));
+</td></tr><tr><td>
+FDCPE_stan_FSM_FFd3: FDCPE port map (stan_FSM_FFd3,stan_FSM_FFd3_D,clk,NOT reset,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stan_FSM_FFd3_D <= ((k)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT stan_FSM_FFd2 AND NOT stan_FSM_FFd3 AND stan_FSM_FFd1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+stan_q <= (stan_FSM_FFd2 AND stan_FSM_FFd1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

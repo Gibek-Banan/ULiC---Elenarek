@@ -1,0 +1,57 @@
+MDF Database:  version 1.0
+MDF_INFO | Automat | XC2C256-6-TQ144
+MACROCELL | 8 | 14 | stan_q_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | stan_FSM_FFd2  | stan_FSM_FFd1
+INPUTMC | 2 | 0 | 10 | 0 | 15
+EQ | 1 | 
+   stan_q = stan_FSM_FFd2 & stan_FSM_FFd1;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 10 | stan_FSM_FFd2_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 4 | 0 | 15 | 0 | 14 | 0 | 10 | 8 | 14
+INPUTS | 4 | stan_FSM_FFd2  | k  | stan_FSM_FFd3  | stan_FSM_FFd1
+INPUTMC | 3 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTP | 1 | 190
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   stan_FSM_FFd2 := !stan_FSM_FFd2 & !k & stan_FSM_FFd3
+	# !k & stan_FSM_FFd3 & stan_FSM_FFd1
+	# stan_FSM_FFd2 & k & !stan_FSM_FFd3 & 
+	!stan_FSM_FFd1;	// (3 pt, 4 inp)
+    stan_FSM_FFd2.CLK = clk;	// CTC	(1 pt, 1 inp)
+   stan_FSM_FFd2.AR = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 14 | stan_FSM_FFd3_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 3 | 0 | 15 | 0 | 14 | 0 | 10
+INPUTS | 4 | k  | stan_FSM_FFd2  | stan_FSM_FFd3  | stan_FSM_FFd1
+INPUTMC | 3 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTP | 1 | 190
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   stan_FSM_FFd3 := k
+	# !stan_FSM_FFd2 & !stan_FSM_FFd3 & stan_FSM_FFd1;	// (2 pt, 4 inp)
+    stan_FSM_FFd3.CLK = clk;	// CTC	(1 pt, 1 inp)
+   stan_FSM_FFd3.AR = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 15 | stan_FSM_FFd1_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 4 | 0 | 15 | 0 | 14 | 0 | 10 | 8 | 14
+INPUTS | 4 | stan_FSM_FFd2  | k  | stan_FSM_FFd3  | stan_FSM_FFd1
+INPUTMC | 3 | 0 | 10 | 0 | 14 | 0 | 15
+INPUTP | 1 | 190
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   stan_FSM_FFd1 := stan_FSM_FFd2 & !k & stan_FSM_FFd3
+	# !stan_FSM_FFd2 & !k & stan_FSM_FFd1;	// (2 pt, 4 inp)
+    stan_FSM_FFd1.CLK = clk;	// CTC	(1 pt, 1 inp)
+   stan_FSM_FFd1.AR = !reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | reset
+
+PIN | clk | 64 | 16 | LVCMOS18 | 62 | 0
+PIN | k | 64 | 16 | LVCMOS18 | 190 | 3 | 0 | 15 | 0 | 14 | 0 | 10
+PIN | reset | 65536 | 16 | LVCMOS18 | 218 | 3 | 0 | 15 | 0 | 14 | 0 | 10
+PIN | stan_q | 536871040 | 0 | LVCMOS18 | 178
