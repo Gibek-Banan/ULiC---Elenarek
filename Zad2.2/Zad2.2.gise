@@ -22,13 +22,50 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Zad2.2.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Automat.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Automat.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="Automat.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Automat.cmd_log"/>
+    <file xil_pn:fileType="FILE_LFP" xil_pn:name="Automat.lfp"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Automat.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Automat.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Automat.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Automat.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Automat.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Automat.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Automat.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Automat_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Automat_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Automat_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1618301007" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1618301007">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1618301007" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1721982096326901511" xil_pn:start_ts="1618301007">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1618301012" xil_pn:in_ck="105150796469597803" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-5521526450892885093" xil_pn:start_ts="1618301007">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="Automat.lso"/>
+      <outfile xil_pn:name="Automat.ngc"/>
+      <outfile xil_pn:name="Automat.ngr"/>
+      <outfile xil_pn:name="Automat.prj"/>
+      <outfile xil_pn:name="Automat.stx"/>
+      <outfile xil_pn:name="Automat.syr"/>
+      <outfile xil_pn:name="Automat.xst"/>
+      <outfile xil_pn:name="Automat_vhdl.prj"/>
+      <outfile xil_pn:name="Automat_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
 
 </generated_project>

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Studia/ULiC/Zad2.2/Automat.xst" -ofn "C:/Studia/ULiC/Zad2.2/Automat.syr" 
