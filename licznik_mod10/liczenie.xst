@@ -1,5 +1,0 @@
-set -tmpdir "C:/Studia/ULiC/licznik_mod10/xst/projnav.tmp"
-set -xsthdpdir "C:/Studia/ULiC/licznik_mod10/xst"
-elaborate
--ifn liczenie.prj
--ifmt mixed

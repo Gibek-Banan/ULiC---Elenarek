@@ -1,7 +1,0 @@
-xst -intstyle ise -ifn "C:/Studia/ULiC/licznik_mod10/liczenie.xst" -ofn "C:/Studia/ULiC/licznik_mod10/liczenie.syr" 
-ngdbuild -intstyle ise -dd _ngo -uc liczenie.ucf -p xc2c256-TQ144-6 liczenie.ngc liczenie.ngd  
-cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 liczenie.ngd 
-XSLTProcess liczenie_build.xml 
-tsim -intstyle ise liczenie liczenie.nga 
-taengine -intstyle ise -f liczenie -w --format html1 -l liczenie_html/tim/timing_report.htm 
-hprep6 -s IEEE1149 -i liczenie 

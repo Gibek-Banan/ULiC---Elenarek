@@ -1,0 +1,74 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+led(0) <= NOT ((licznik(0) AND licznik(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+led(1) <= NOT ((NOT licznik(0) AND licznik(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+led(2) <= NOT ((licznik(0) AND NOT licznik(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+led(3) <= NOT ((NOT licznik(0) AND NOT licznik(1)));
+</td></tr><tr><td>
+FTCPE_licznik0: FTCPE port map (licznik(0),'0',clk,'0','0','1');
+</td></tr><tr><td>
+FTCPE_licznik1: FTCPE port map (licznik(1),licznik(0),clk,'0','0','1');
+</td></tr><tr><td>
+</td></tr><tr><td>
+wyj(0) <= (NOT wej(1) AND wej(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT wej(1) AND NOT wej(3) AND wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wej(0) AND wej(3) AND NOT wej(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wyj(1) <= (NOT wej(0) AND wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((wej(1) AND wej(0) AND wej(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wej(1) AND NOT wej(3) AND wej(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wyj(2) <= ((wej(1) AND wej(3) AND wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wej(0) AND wej(3) AND wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wej(1) AND NOT wej(0) AND NOT wej(3) AND NOT wej(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wyj(3) <= ((wej(1) AND wej(0) AND wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wej(1) AND NOT wej(0) AND wej(3) AND NOT wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wej(1) AND wej(0) AND NOT wej(3) AND NOT wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wej(1) AND NOT wej(0) AND NOT wej(3) AND wej(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wyj(4) <= ((wej(0) AND NOT wej(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wej(1) AND wej(0) AND NOT wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wej(1) AND NOT wej(3) AND wej(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wyj(5) <= (wej(0) AND NOT wej(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT wej(1) AND wej(0) AND wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wej(1) AND NOT wej(0) AND NOT wej(3) AND NOT wej(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wyj(6) <= ((NOT wej(1) AND NOT wej(3) AND NOT wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wej(1) AND wej(0) AND NOT wej(3) AND wej(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wej(1) AND NOT wej(0) AND wej(3) AND wej(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

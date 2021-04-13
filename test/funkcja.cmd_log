@@ -1,7 +1,0 @@
-xst -intstyle ise -ifn "C:/Studia/ULiC/test/funkcja.xst" -ofn "C:/Studia/ULiC/test/funkcja.syr" 
-ngdbuild -intstyle ise -dd _ngo -uc funkcja.ucf -p xc2c256-TQ144-6 funkcja.ngc funkcja.ngd  
-cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 funkcja.ngd 
-XSLTProcess funkcja_build.xml 
-tsim -intstyle ise funkcja funkcja.nga 
-taengine -intstyle ise -f funkcja -w --format html1 -l funkcja_html/tim/timing_report.htm 
-hprep6 -s IEEE1149 -i funkcja 

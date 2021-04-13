@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Kod_Blok_Iter.vhd -prj Zad2.1 -o Kod_Blok_Iter.spl -module Kod_Blok_Iter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr Kod_Blok_Iter.spl C:/Studia/ULiC/Zad2.1/Kod_Blok_Iter.sym 

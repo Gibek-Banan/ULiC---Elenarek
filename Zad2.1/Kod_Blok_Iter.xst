@@ -1,0 +1,5 @@
+set -tmpdir "C:/Studia/ULiC/Zad2.1/xst/projnav.tmp"
+set -xsthdpdir "C:/Studia/ULiC/Zad2.1/xst"
+elaborate
+-ifn Kod_Blok_Iter.prj
+-ifmt mixed

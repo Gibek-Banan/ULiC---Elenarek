@@ -1,0 +1,129 @@
+MDF Database:  version 1.0
+MDF_INFO | Transkoder | XC2C256-6-TQ144
+MACROCELL | 10 | 12 | led<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | licznik<0>  | licznik<1>
+INPUTMC | 2 | 0 | 14 | 0 | 15
+EQ | 1 | 
+   !led<0> = licznik<0> & licznik<1>;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 14 | licznik<0>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 5 | 0 | 15 | 10 | 12 | 10 | 13 | 10 | 14 | 10 | 15
+INPUTS | 0
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   !licznik<0>.T := Gnd;	// (0 pt, 0 inp)
+    licznik<0>.CLK = clk;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 15 | licznik<1>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 4 | 10 | 12 | 10 | 13 | 10 | 14 | 10 | 15
+INPUTS | 1 | licznik<0>
+INPUTMC | 1 | 0 | 14
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   licznik<1>.T := licznik<0>;	// (1 pt, 1 inp)
+    licznik<1>.CLK = clk;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 10 | 13 | led<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | licznik<0>  | licznik<1>
+INPUTMC | 2 | 0 | 14 | 0 | 15
+EQ | 1 | 
+   !led<1> = !licznik<0> & licznik<1>;	// (1 pt, 2 inp)
+
+MACROCELL | 10 | 14 | led<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | licznik<0>  | licznik<1>
+INPUTMC | 2 | 0 | 14 | 0 | 15
+EQ | 1 | 
+   !led<2> = licznik<0> & !licznik<1>;	// (1 pt, 2 inp)
+
+MACROCELL | 10 | 15 | led<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | licznik<0>  | licznik<1>
+INPUTMC | 2 | 0 | 14 | 0 | 15
+EQ | 1 | 
+   !led<3> = !licznik<0> & !licznik<1>;	// (1 pt, 2 inp)
+
+MACROCELL | 13 | 15 | wyj<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | wej<1>  | wej<0>  | wej<3>  | wej<2>
+INPUTP | 4 | 4 | 3 | 12 | 8
+EQ | 3 | 
+   wyj<0> = !wej<1> & wej<0>
+	$ !wej<1> & !wej<3> & wej<2>
+	# wej<0> & wej<3> & !wej<2>;	// (3 pt, 4 inp)
+
+MACROCELL | 15 | 14 | wyj<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | wej<0>  | wej<2>  | wej<1>  | wej<3>
+INPUTP | 4 | 3 | 8 | 4 | 12
+EQ | 3 | 
+   wyj<1> = !wej<0> & wej<2>
+	$ wej<1> & wej<0> & wej<3>
+	# !wej<1> & !wej<3> & wej<2>;	// (3 pt, 4 inp)
+
+MACROCELL | 15 | 11 | wyj<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | wej<1>  | wej<3>  | wej<2>  | wej<0>
+INPUTP | 4 | 4 | 12 | 8 | 3
+EQ | 3 | 
+   wyj<2> = wej<1> & wej<3> & wej<2>
+	# !wej<0> & wej<3> & wej<2>
+	# wej<1> & !wej<0> & !wej<3> & !wej<2>;	// (3 pt, 4 inp)
+
+MACROCELL | 15 | 10 | wyj<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | wej<1>  | wej<0>  | wej<2>  | wej<3>
+INPUTP | 4 | 4 | 3 | 8 | 12
+EQ | 4 | 
+   wyj<3> = wej<1> & wej<0> & wej<2>
+	# wej<1> & !wej<0> & wej<3> & !wej<2>
+	# !wej<1> & wej<0> & !wej<3> & !wej<2>
+	# !wej<1> & !wej<0> & !wej<3> & wej<2>;	// (4 pt, 4 inp)
+
+MACROCELL | 15 | 4 | wyj<4>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | wej<0>  | wej<3>  | wej<1>  | wej<2>
+INPUTP | 4 | 3 | 12 | 4 | 8
+EQ | 3 | 
+   wyj<4> = wej<0> & !wej<3>
+	# !wej<1> & wej<0> & !wej<2>
+	# !wej<1> & !wej<3> & wej<2>;	// (3 pt, 4 inp)
+
+MACROCELL | 15 | 15 | wyj<5>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | wej<0>  | wej<3>  | wej<1>  | wej<2>
+INPUTP | 4 | 3 | 12 | 4 | 8
+EQ | 3 | 
+   wyj<5> = wej<0> & !wej<3>
+	$ !wej<1> & wej<0> & wej<2>
+	# wej<1> & !wej<0> & !wej<3> & !wej<2>;	// (3 pt, 4 inp)
+
+MACROCELL | 15 | 12 | wyj<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | wej<1>  | wej<3>  | wej<2>  | wej<0>
+INPUTP | 4 | 4 | 12 | 8 | 3
+EQ | 3 | 
+   wyj<6> = !wej<1> & !wej<3> & !wej<2>
+	# wej<1> & wej<0> & !wej<3> & wej<2>
+	# !wej<1> & !wej<0> & wej<3> & wej<2>;	// (3 pt, 4 inp)
+
+PIN | clk | 64 | 16 | LVCMOS18 | 62 | 0
+PIN | wej<0> | 64 | 16 | LVCMOS18 | 3 | 7 | 13 | 15 | 15 | 14 | 15 | 11 | 15 | 10 | 15 | 4 | 15 | 15 | 15 | 12
+PIN | wej<1> | 64 | 16 | LVCMOS18 | 4 | 7 | 13 | 15 | 15 | 14 | 15 | 11 | 15 | 10 | 15 | 4 | 15 | 15 | 15 | 12
+PIN | wej<2> | 64 | 16 | LVCMOS18 | 8 | 7 | 13 | 15 | 15 | 14 | 15 | 11 | 15 | 10 | 15 | 4 | 15 | 15 | 15 | 12
+PIN | wej<3> | 64 | 16 | LVCMOS18 | 12 | 7 | 13 | 15 | 15 | 14 | 15 | 11 | 15 | 10 | 15 | 4 | 15 | 15 | 15 | 12
+PIN | led<0> | 536871040 | 0 | LVCMOS18 | 192
+PIN | led<1> | 536871040 | 0 | LVCMOS18 | 194
+PIN | led<2> | 536871040 | 0 | LVCMOS18 | 195
+PIN | led<3> | 536871040 | 0 | LVCMOS18 | 196
+PIN | wyj<0> | 536871040 | 0 | LVCMOS18 | 95
+PIN | wyj<1> | 536871040 | 0 | LVCMOS18 | 82
+PIN | wyj<2> | 536871040 | 0 | LVCMOS18 | 87
+PIN | wyj<3> | 536871040 | 0 | LVCMOS18 | 88
+PIN | wyj<4> | 536871040 | 0 | LVCMOS18 | 90
+PIN | wyj<5> | 536871040 | 0 | LVCMOS18 | 81
+PIN | wyj<6> | 536871040 | 0 | LVCMOS18 | 86

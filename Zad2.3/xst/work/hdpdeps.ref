@@ -1,0 +1,7 @@
+V3 3
+FL C:/Studia/ULiC/Zad2.3/Transkoder.vhd 2021/04/13.09:28:03 P.20131013
+EN work/Transkoder 1618300449 FL C:/Studia/ULiC/Zad2.3/Transkoder.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Transkoder/Behavioral 1618300450 \
+      FL C:/Studia/ULiC/Zad2.3/Transkoder.vhd EN work/Transkoder 1618300449

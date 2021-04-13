@@ -1,0 +1,5 @@
+set -tmpdir "C:/Studia/ULiC/Zad2.2/xst/projnav.tmp"
+set -xsthdpdir "C:/Studia/ULiC/Zad2.2/xst"
+elaborate
+-ifn Automat.prj
+-ifmt mixed

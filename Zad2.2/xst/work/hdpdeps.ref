@@ -1,0 +1,7 @@
+V3 3
+FL C:/Studia/ULiC/Zad2.2/Automat.vhd 2021/04/12.13:13:55 P.20131013
+EN work/Automat 1618226046 FL C:/Studia/ULiC/Zad2.2/Automat.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Automat/Behavioral 1618226047 \
+      FL C:/Studia/ULiC/Zad2.2/Automat.vhd EN work/Automat 1618226046

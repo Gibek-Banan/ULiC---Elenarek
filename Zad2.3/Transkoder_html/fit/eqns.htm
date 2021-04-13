@@ -1,0 +1,205 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="paths.js"></script><script src="eqns.js"></script><script>
+      var design = "Transkoder";
+      var device = "XC2C256";
+      signals = new Array("led0_SPECSIG","led1_SPECSIG","led2_SPECSIG","led3_SPECSIG","licznik0_SPECSIG","licznik1_SPECSIG","wyj0_SPECSIG","wyj1_SPECSIG","wyj2_SPECSIG","wyj3_SPECSIG","wyj4_SPECSIG","wyj5_SPECSIG","wyj6_SPECSIG");
+      sigNegs = new Array("ON","ON","ON","ON","ON","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF");
+      sigTypes = new Array("","","","","TFF","TFF","","","","","","","");
+
+      
+           iostyle["wej0_SPECSIG"]=new Array("KPR");
+        
+           iostyle["wej1_SPECSIG"]=new Array("KPR");
+        
+           iostyle["wej2_SPECSIG"]=new Array("KPR");
+        
+           iostyle["wej3_SPECSIG"]=new Array("KPR");
+        
+           iostyle["clk"]=new Array("KPR");
+        
+        specSig["wej0_SPECSIG"]=new Array("wej<0>");
+      
+        specSig["wej1_SPECSIG"]=new Array("wej<1>");
+      
+        specSig["wej2_SPECSIG"]=new Array("wej<2>");
+      
+        specSig["wej3_SPECSIG"]=new Array("wej<3>");
+      
+        specSig["led0_SPECSIG"]=new Array("led<0>");
+      
+        specSig["led1_SPECSIG"]=new Array("led<1>");
+      
+        specSig["led2_SPECSIG"]=new Array("led<2>");
+      
+        specSig["led3_SPECSIG"]=new Array("led<3>");
+      
+        specSig["wyj0_SPECSIG"]=new Array("wyj<0>");
+      
+        specSig["wyj4_SPECSIG"]=new Array("wyj<4>");
+      
+        specSig["wyj3_SPECSIG"]=new Array("wyj<3>");
+      
+        specSig["wyj2_SPECSIG"]=new Array("wyj<2>");
+      
+        specSig["wyj6_SPECSIG"]=new Array("wyj<6>");
+      
+        specSig["wyj1_SPECSIG"]=new Array("wyj<1>");
+      
+        specSig["wyj5_SPECSIG"]=new Array("wyj<5>");
+      
+        specSig["licznik0_SPECSIG"]=new Array("licznik<0>");
+      
+        specSig["licznik1_SPECSIG"]=new Array("licznik<1>");
+      
+            pterms["FB1_4"]=new Array("clk");
+          
+            pterms["FB1_55"]=new Array("licznik0_SPECSIG");
+          
+            pterms["FB11_46"]=new Array("licznik0_SPECSIG","licznik1_SPECSIG");
+          
+            pterms["FB11_49"]=new Array("/licznik0_SPECSIG","licznik1_SPECSIG");
+          
+            pterms["FB11_52"]=new Array("licznik0_SPECSIG","/licznik1_SPECSIG");
+          
+            pterms["FB11_55"]=new Array("/licznik0_SPECSIG","/licznik1_SPECSIG");
+          
+            pterms["FB14_0"]=new Array("/wej1_SPECSIG","/wej3_SPECSIG","wej2_SPECSIG");
+          
+            pterms["FB14_1"]=new Array("wej0_SPECSIG","wej3_SPECSIG","/wej2_SPECSIG");
+          
+            pterms["FB14_55"]=new Array("/wej1_SPECSIG","wej0_SPECSIG");
+          
+            pterms["FB16_0"]=new Array("/wej1_SPECSIG","/wej3_SPECSIG","wej2_SPECSIG");
+          
+            pterms["FB16_1"]=new Array("wej1_SPECSIG","wej0_SPECSIG","wej3_SPECSIG");
+          
+            pterms["FB16_2"]=new Array("wej1_SPECSIG","wej0_SPECSIG","wej2_SPECSIG");
+          
+            pterms["FB16_3"]=new Array("/wej1_SPECSIG","wej0_SPECSIG","/wej3_SPECSIG","/wej2_SPECSIG");
+          
+            pterms["FB16_4"]=new Array("wej1_SPECSIG","/wej0_SPECSIG","wej3_SPECSIG","/wej2_SPECSIG");
+          
+            pterms["FB16_5"]=new Array("/wej1_SPECSIG","/wej0_SPECSIG","/wej3_SPECSIG","wej2_SPECSIG");
+          
+            pterms["FB16_6"]=new Array("/wej1_SPECSIG","wej0_SPECSIG","wej2_SPECSIG");
+          
+            pterms["FB16_7"]=new Array("wej1_SPECSIG","/wej0_SPECSIG","/wej3_SPECSIG","/wej2_SPECSIG");
+          
+            pterms["FB16_8"]=new Array("wej1_SPECSIG","wej3_SPECSIG","wej2_SPECSIG");
+          
+            pterms["FB16_9"]=new Array("/wej0_SPECSIG","wej3_SPECSIG","wej2_SPECSIG");
+          
+            pterms["FB16_10"]=new Array("/wej1_SPECSIG","wej0_SPECSIG","/wej2_SPECSIG");
+          
+            pterms["FB16_11"]=new Array("/wej1_SPECSIG","/wej3_SPECSIG","/wej2_SPECSIG");
+          
+            pterms["FB16_12"]=new Array("wej1_SPECSIG","wej0_SPECSIG","/wej3_SPECSIG","wej2_SPECSIG");
+          
+            pterms["FB16_13"]=new Array("/wej1_SPECSIG","/wej0_SPECSIG","wej3_SPECSIG","wej2_SPECSIG");
+          
+            pterms["FB16_52"]=new Array("/wej0_SPECSIG","wej2_SPECSIG");
+          
+            pterms["FB16_55"]=new Array("wej0_SPECSIG","/wej3_SPECSIG");
+          
+          d2["licznik0_SPECSIG"]=new Array("GND");
+          
+              clk["licznik0_SPECSIG"]=new Array("FB1_4");
+              prld["licznik0_SPECSIG"]="GND";
+          d1["licznik1_SPECSIG"]=new Array("FB1_55");
+          
+              clk["licznik1_SPECSIG"]=new Array("FB1_4");
+              prld["licznik1_SPECSIG"]="GND";
+          d1["led0_SPECSIG"]=new Array("FB11_46");
+          
+          d1["led1_SPECSIG"]=new Array("FB11_49");
+          
+          d1["led2_SPECSIG"]=new Array("FB11_52");
+          
+          d1["led3_SPECSIG"]=new Array("FB11_55");
+          
+          d1["wyj0_SPECSIG"]=new Array("FB14_55");
+          
+          d2["wyj0_SPECSIG"]=new Array("FB14_0","FB14_1");
+          
+          d2["wyj4_SPECSIG"]=new Array("FB16_55","FB16_10","FB16_0");
+          
+          d2["wyj3_SPECSIG"]=new Array("FB16_2","FB16_4","FB16_3","FB16_5");
+          
+          d2["wyj2_SPECSIG"]=new Array("FB16_8","FB16_9","FB16_7");
+          
+          d2["wyj6_SPECSIG"]=new Array("FB16_11","FB16_12","FB16_13");
+          
+          d1["wyj1_SPECSIG"]=new Array("FB16_52");
+          
+          d2["wyj1_SPECSIG"]=new Array("FB16_1","FB16_0");
+          
+          d1["wyj5_SPECSIG"]=new Array("FB16_55");
+          
+          d2["wyj5_SPECSIG"]=new Array("FB16_6","FB16_7");
+          
+
+      uimSignals = new Array();
+
+      uimSigNegs = new Array();
+
+      uimPterms = new Array();
+      
+
+      
+        function getEqnList() {
+          var str = "<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>";
+          str += "<center><h3>Equations</h3></center>";
+          str += "<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>";
+          for (s=0; s<uimSignals.length; s++) {
+            str += "<tr><td>";
+            str += retUimEqn(uimSignals[s]);
+            str += "</td></tr>";
+          }
+          for (s=0; s<signals.length; s++) {
+            str += "<tr><td>";
+            str += retEqn(signals[s]);
+            str += "</td></tr>";
+          }
+
+          var legend = retLegend();
+		      if (legend != "") {
+		        str += "<tr><td>" + legend + "</td></tr>";
+		      }
+
+          str += "</table>";
+          str += "<form><span class='pgRef'>";
+
+          if (!parent.leftnav.IsNS()) {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><input type='button' value='back to top' ";
+            str += "onclick='javascript:parent.leftnav.showEqnAll()' ";
+            str += "onmouseover=\"window.status='goto top of page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<input type='button' value='print page' ";
+            str += "onclick='javascript:window.print()' ";
+            str += "onmouseover=\"window.status='print page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+          else {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><a href='javascript:parent.leftnav.showEqnAll()'>back to top</a>";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<a href='javascript:window.print()'>";
+            str += "print page</a>";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+
+          str += "</span></form>";
+          str += "</body></html>";
+          return str;
+        }
+      
+    </script>
+</head></html>
