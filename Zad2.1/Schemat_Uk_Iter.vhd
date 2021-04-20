@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Schemat_Uk_Iter.vhf
--- /___/   /\     Timestamp : 04/11/2021 19:10:08
+-- /___/   /\     Timestamp : 04/20/2021 09:04:30
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -30,6 +30,10 @@ entity Schemat_Uk_Iter is
           a1     : in    std_logic; 
           a2     : in    std_logic; 
           a3     : in    std_logic; 
+          a4     : in    std_logic; 
+          a5     : in    std_logic; 
+          a6     : in    std_logic; 
+          a7     : in    std_logic; 
           p_wej1 : in    std_logic; 
           p_wej2 : in    std_logic; 
           p_wyj1 : out   std_logic; 
@@ -37,12 +41,20 @@ entity Schemat_Uk_Iter is
 end Schemat_Uk_Iter;
 
 architecture BEHAVIORAL of Schemat_Uk_Iter is
-   signal XLXN_1 : std_logic;
-   signal XLXN_2 : std_logic;
-   signal XLXN_3 : std_logic;
-   signal XLXN_4 : std_logic;
-   signal XLXN_5 : std_logic;
-   signal XLXN_6 : std_logic;
+   signal XLXN_1  : std_logic;
+   signal XLXN_2  : std_logic;
+   signal XLXN_3  : std_logic;
+   signal XLXN_4  : std_logic;
+   signal XLXN_5  : std_logic;
+   signal XLXN_6  : std_logic;
+   signal XLXN_15 : std_logic;
+   signal XLXN_16 : std_logic;
+   signal XLXN_17 : std_logic;
+   signal XLXN_18 : std_logic;
+   signal XLXN_19 : std_logic;
+   signal XLXN_20 : std_logic;
+   signal XLXN_21 : std_logic;
+   signal XLXN_22 : std_logic;
    component Kod_Blok_Iter
       port ( a     : in    std_logic; 
              pin1  : in    std_logic; 
@@ -77,6 +89,34 @@ begin
       port map (a=>a3,
                 pin1=>XLXN_5,
                 pin2=>XLXN_6,
+                pout1=>XLXN_21,
+                pout2=>XLXN_22);
+   
+   XLXI_10 : Kod_Blok_Iter
+      port map (a=>a4,
+                pin1=>XLXN_21,
+                pin2=>XLXN_22,
+                pout1=>XLXN_15,
+                pout2=>XLXN_16);
+   
+   XLXI_11 : Kod_Blok_Iter
+      port map (a=>a5,
+                pin1=>XLXN_15,
+                pin2=>XLXN_16,
+                pout1=>XLXN_17,
+                pout2=>XLXN_18);
+   
+   XLXI_12 : Kod_Blok_Iter
+      port map (a=>a6,
+                pin1=>XLXN_17,
+                pin2=>XLXN_18,
+                pout1=>XLXN_19,
+                pout2=>XLXN_20);
+   
+   XLXI_13 : Kod_Blok_Iter
+      port map (a=>a7,
+                pin1=>XLXN_19,
+                pin2=>XLXN_20,
                 pout1=>p_wyj1,
                 pout2=>p_wyj2);
    

@@ -13,7 +13,9 @@ FDCPE_stan_FSM_FFd2: FDCPE port map (stan_FSM_FFd2,stan_FSM_FFd2_D,clk,NOT reset
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stan_FSM_FFd2_D <= ((NOT stan_FSM_FFd2 AND NOT k AND stan_FSM_FFd3)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT k AND stan_FSM_FFd3 AND stan_FSM_FFd1)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (stan_FSM_FFd2 AND k AND NOT stan_FSM_FFd3 AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT stan_FSM_FFd1));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT stan_FSM_FFd1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT stan_FSM_FFd2 AND k AND NOT stan_FSM_FFd3 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	stan_FSM_FFd1));
 </td></tr><tr><td>
 FDCPE_stan_FSM_FFd3: FDCPE port map (stan_FSM_FFd3,stan_FSM_FFd3_D,clk,NOT reset,'0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stan_FSM_FFd3_D <= ((k)

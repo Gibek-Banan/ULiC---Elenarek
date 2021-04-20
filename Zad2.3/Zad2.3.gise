@@ -90,10 +90,15 @@
     <transform xil_pn:end_ts="1618300813" xil_pn:in_ck="4005487606644213609" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7116584922487516075" xil_pn:start_ts="1618300813">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1618300819" xil_pn:in_ck="5786636492694188748" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1618300813">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Transkoder.bld"/>
       <outfile xil_pn:name="Transkoder.ngd"/>
       <outfile xil_pn:name="Transkoder_ngdbuild.xrpt"/>
@@ -103,6 +108,7 @@
     <transform xil_pn:end_ts="1618300833" xil_pn:in_ck="4005487606644206116" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="-3654064012546138905" xil_pn:start_ts="1618300819">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Transkoder.chk"/>
       <outfile xil_pn:name="Transkoder.cxt"/>
       <outfile xil_pn:name="Transkoder.gyd"/>
@@ -121,12 +127,14 @@
     <transform xil_pn:end_ts="1618300835" xil_pn:in_ck="4005487606644214980" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1618300833">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Transkoder.jed"/>
     </transform>
     <transform xil_pn:end_ts="1618300833" xil_pn:in_ck="4005487606644214980" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1618300831">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
   </transforms>
 

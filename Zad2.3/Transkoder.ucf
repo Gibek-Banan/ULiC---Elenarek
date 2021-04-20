@@ -7,16 +7,16 @@ NET "led<1>"  LOC = "P128"  ;
 NET "led<2>"  LOC = "P129"  ;
 NET "led<3>"  LOC = "P130"  ;
 NET "wej<0>"  LOC = "P3"  ;
-NET "wej<1>"  LOC = "P4"  ;
+NET "wej<1>"  LOC = "P5"  ;
 NET "wej<2>"  LOC = "P7"  ;
 NET "wej<3>"  LOC = "P10"  ;
-NET "wyj<0>"  LOC = "P61"  ;
-NET "wyj<1>"  LOC = "P54"  ;
-NET "wyj<2>"  LOC = "P57"  ;
+NET "wyj<0>"  LOC = "P56"  ;
+NET "wyj<1>"  LOC = "P53"  ;
+NET "wyj<2>"  LOC = "P60"  ;
 NET "wyj<3>"  LOC = "P58"  ;
-NET "wyj<4>"  LOC = "P60"  ;
-NET "wyj<5>"  LOC = "P53"  ;
-NET "wyj<6>"  LOC = "P56"  ;
+NET "wyj<4>"  LOC = "P57"  ;
+NET "wyj<5>"  LOC = "P54"  ;
+NET "wyj<6>"  LOC = "P61"  ;
 
 #PACE: Start of PACE Area Constraints
 

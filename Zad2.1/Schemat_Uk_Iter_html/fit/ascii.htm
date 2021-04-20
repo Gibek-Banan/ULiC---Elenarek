@@ -3,7 +3,7 @@
  
 cpldfit:  version P.20131013                        Xilinx Inc.
                                   Fitter Report
-Design Name: Schemat_Uk_Iter                     Date:  4-11-2021,  7:21PM
+Design Name: Schemat_Uk_Iter                     Date:  4-20-2021, 10:37AM
 Device Used: XC2C256-6-TQ144
 Fitting Status: Successful
 
@@ -11,7 +11,7 @@ Fitting Status: Successful
 
 Macrocells     Product Terms    Function Block   Registers      Pins           
 Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
-2  /256 (  1%) 10  /896  (  1%) 6   /640  (  1%) 0  /256 (  0%) 8  /118 (  7%)
+2  /256 (  1%) 18  /896  (  2%) 10  /640  (  2%) 0  /256 (  0%) 12 /118 ( 10%)
 
 ** Function Block Resources **
 
@@ -28,13 +28,13 @@ FB8       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB9       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB10      0/16      0/40     0/56     0/ 9    0/1      0/1      0/1      0/1
 FB11      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
-FB12      2/16      6/40    10/56     2/ 6    0/1      0/1      0/1      0/1
+FB12      2/16     10/40    18/56     2/ 6    0/1      0/1      0/1      0/1
 FB13      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB14      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB15      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
 FB16      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
          -----    -------  -------   -----    ---      ---      ---      ---
-Total     2/256     6/640   10/896    2/118   0/16     0/16     0/16     0/16
+Total     2/256    10/640   18/896    2/118   0/16     0/16     0/16     0/16
 
 CTC - Control Term Clock
 CTR - Control Term Reset
@@ -54,14 +54,14 @@ Used/Tot    Used/Tot    Used/Tot    Used/Tot
 
 Signal Type    Required     Mapped  |  Pin Type            Used    Total 
 ------------------------------------|------------------------------------
-Input         :    6           6    |  I/O              :     5    108
+Input         :   10          10    |  I/O              :     7    108
 Output        :    2           2    |  GCK/IO           :     0      3
-Bidirectional :    0           0    |  GTS/IO           :     3      4
+Bidirectional :    0           0    |  GTS/IO           :     4      4
 GCK           :    0           0    |  GSR/IO           :     0      1
 GTS           :    0           0    |  CDR/IO           :     0      1
-GSR           :    0           0    |  DGE/IO           :     0      1
+GSR           :    0           0    |  DGE/IO           :     1      1
                  ----        ----
-        Total      8           8
+        Total     12          12
 
 End of Mapped Resource Summary
 **************************  Errors and Warnings  ***************************
@@ -74,19 +74,23 @@ WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
 
 Signal              Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
 Name                Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
-p_wyj2              4     6     2    FB12_2  100   I/O       O       LVCMOS18           FAST         
-p_wyj1              6     6     2    FB12_12 97    I/O       O       LVCMOS18           FAST         
+p_wyj2              9     10    2    FB12_2  100   I/O       O       LVCMOS18           FAST         
+p_wyj1              10    10    2    FB12_12 97    I/O       O       LVCMOS18           FAST         
 
-** 6 Inputs **
+** 10 Inputs **
 
 Signal              Bank Loc     Pin   Pin       Pin     I/O      I/O
 Name                             No.   Type      Use     STD      Style
-p_wej1              2    FB2_1   2     GTS/I/O   I       LVCMOS18 KPR
-a0                  2    FB2_3   3     GTS/I/O   I       LVCMOS18 KPR
-p_wej2              2    FB2_4   4     I/O       I       LVCMOS18 KPR
-a1                  2    FB2_5   5     GTS/I/O   I       LVCMOS18 KPR
-a2                  2    FB2_13  7     I/O       I       LVCMOS18 KPR
-a3                  2    FB2_15  10    I/O       I       LVCMOS18 KPR
+a7                  2    FB2_1   2     GTS/I/O   I       LVCMOS18 KPR
+a3                  2    FB2_3   3     GTS/I/O   I       LVCMOS18 KPR
+a6                  2    FB2_4   4     I/O       I       LVCMOS18 KPR
+a2                  2    FB2_5   5     GTS/I/O   I       LVCMOS18 KPR
+a5                  2    FB2_12  6     GTS/I/O   I       LVCMOS18 KPR
+a1                  2    FB2_13  7     I/O       I       LVCMOS18 KPR
+a4                  2    FB2_14  9     I/O       I       LVCMOS18 KPR
+a0                  2    FB2_15  10    I/O       I       LVCMOS18 KPR
+p_wej1              1    FB6_12  39    DGE/I/O   I       LVCMOS18 KPR
+p_wej2              2    FB11_11 124   I/O       I       LVCMOS18 KPR
 
 Legend:
 Pin No.   - ~     - User Assigned
@@ -153,9 +157,9 @@ Name                          Pt            No.  Type    Use
 (unused)                      0     FB2_9        (b)           
 (unused)                      0     FB2_10       (b)           
 (unused)                      0     FB2_11       (b)           
-(unused)                      0     FB2_12  6    GTS/I/O       
+(unused)                      0     FB2_12  6    GTS/I/O I     
 (unused)                      0     FB2_13  7    I/O     I     
-(unused)                      0     FB2_14  9    I/O           
+(unused)                      0     FB2_14  9    I/O     I     
 (unused)                      0     FB2_15  10   I/O     I     
 (unused)                      0     FB2_16       (b)           
 *********************************** FB3  ***********************************
@@ -245,7 +249,7 @@ Name                          Pt            No.  Type    Use
 (unused)                      0     FB6_9        (b)           
 (unused)                      0     FB6_10       (b)           
 (unused)                      0     FB6_11       (b)           
-(unused)                      0     FB6_12  39   DGE/I/O       
+(unused)                      0     FB6_12  39   DGE/I/O I     
 (unused)                      0     FB6_13  40   I/O           
 (unused)                      0     FB6_14  41   I/O           
 (unused)                      0     FB6_15  42   I/O           
@@ -359,7 +363,7 @@ Name                          Pt            No.  Type    Use
 (unused)                      0     FB11_8       (b)           
 (unused)                      0     FB11_9       (b)           
 (unused)                      0     FB11_10      (b)           
-(unused)                      0     FB11_11 124  I/O           
+(unused)                      0     FB11_11 124  I/O     I     
 (unused)                      0     FB11_12 125  I/O           
 (unused)                      0     FB11_13 126  I/O           
 (unused)                      0     FB11_14 128  I/O           
@@ -367,13 +371,13 @@ Name                          Pt            No.  Type    Use
 (unused)                      0     FB11_16 130  I/O           
 *********************************** FB12 ***********************************
 This function block is part of I/O Bank number:               2
-Number of function block inputs used/remaining:               6/34
+Number of function block inputs used/remaining:               10/30
 Number of function block control terms used/remaining:        0/4
-Number of PLA product terms used/remaining:                   10/46
+Number of PLA product terms used/remaining:                   18/38
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
 (unused)                      0     FB12_1       (b)           
-p_wyj2                        4     FB12_2  100  I/O     O                 
+p_wyj2                        9     FB12_2  100  I/O     O                 
 (unused)                      0     FB12_3       (b)           
 (unused)                      0     FB12_4       (b)           
 (unused)                      0     FB12_5       (b)           
@@ -383,20 +387,22 @@ p_wyj2                        4     FB12_2  100  I/O     O
 (unused)                      0     FB12_9       (b)           
 (unused)                      0     FB12_10      (b)           
 (unused)                      0     FB12_11 98   I/O           
-p_wyj1                        6     FB12_12 97   I/O     O                 
+p_wyj1                        10    FB12_12 97   I/O     O                 
 (unused)                      0     FB12_13 96   I/O           
 (unused)                      0     FB12_14 95   I/O           
 (unused)                      0     FB12_15 94   I/O           
 (unused)                      0     FB12_16      (b)           
 
 Signals Used by Logic in Function Block
-  1: a0                 3: a2                 5: p_wej1 
-  2: a1                 4: a3                 6: p_wej2 
+  1: a0                 5: a4                 8: a7 
+  2: a1                 6: a5                 9: p_wej1 
+  3: a2                 7: a6                10: p_wej2 
+  4: a3               
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-p_wyj2            XXXXXX.................................. 6       
-p_wyj1            XXXXXX.................................. 6       
+p_wyj2            XXXXXXXXXX.............................. 10      
+p_wyj1            XXXXXXXXXX.............................. 10      
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB13 ***********************************
@@ -497,17 +503,27 @@ Name                          Pt            No.  Type    Use
 
 
 p_wyj1 <= p_wej2
-	XOR ((NOT p_wej2 AND NOT a3 AND a2)
+	XOR ((NOT p_wej2 AND NOT a7 AND a6)
+	OR (NOT p_wej2 AND a4 AND NOT a2 AND NOT a3)
+	OR (NOT p_wej2 AND NOT a4 AND a5 AND NOT a3)
+	OR (NOT p_wej2 AND NOT a4 AND NOT a5 AND a7)
+	OR (NOT p_wej2 AND NOT a5 AND a7 AND NOT a6)
 	OR (NOT p_wej2 AND p_wej1 AND NOT a0 AND a1)
-	OR (NOT p_wej2 AND NOT a0 AND NOT a1 AND a3)
-	OR (NOT p_wej2 AND NOT a1 AND a3 AND NOT a2)
-	OR (p_wej2 AND NOT p_wej1 AND NOT a0 AND NOT a1 AND NOT a3 AND NOT a2));
+	OR (NOT p_wej2 AND NOT a0 AND NOT a1 AND a2)
+	OR (NOT p_wej2 AND NOT a1 AND NOT a2 AND a3)
+	OR (p_wej2 AND NOT a4 AND NOT a5 AND NOT a7 AND NOT a6 AND NOT p_wej1 AND NOT a0 AND 
+	NOT a1 AND NOT a2 AND NOT a3));
 
 
-p_wyj2 <= NOT (((NOT p_wej2 AND a0 AND a2)
-	OR (NOT p_wej2 AND NOT p_wej1 AND a1 AND a3)
-	OR (NOT p_wej2 AND NOT p_wej1 AND a1 AND a2)
-	OR (NOT p_wej2 AND a0 AND a1 AND a3)));
+p_wyj2 <= ((p_wej2)
+	OR (NOT a4 AND NOT a5)
+	OR (NOT a4 AND NOT a3)
+	OR (NOT a5 AND NOT a6)
+	OR (NOT a7 AND NOT a6)
+	OR (p_wej1 AND NOT a0)
+	OR (NOT a0 AND NOT a1)
+	OR (NOT a1 AND NOT a2)
+	OR (NOT a2 AND NOT a3));
 
 
 Register Legend:
@@ -524,16 +540,16 @@ Device : XC2C256-6-TQ144
 
 Pin Signal                         Pin Signal                        
 No. Name                           No. Name                          
-  1 VCC                              73 VCCIO-UNUSED                  
-  2 p_wej1                           74 KPR                           
-  3 a0                               75 KPR                           
-  4 p_wej2                           76 KPR                           
-  5 a1                               77 KPR                           
-  6 KPR                              78 KPR                           
-  7 a2                               79 KPR                           
+  1 VCC                              73 VCCIO-1.8                     
+  2 a7                               74 KPR                           
+  3 a3                               75 KPR                           
+  4 a6                               76 KPR                           
+  5 a2                               77 KPR                           
+  6 a5                               78 KPR                           
+  7 a1                               79 KPR                           
   8 VCCAUX                           80 KPR                           
-  9 KPR                              81 KPR                           
- 10 a3                               82 KPR                           
+  9 a4                               81 KPR                           
+ 10 a0                               82 KPR                           
  11 KPR                              83 KPR                           
  12 KPR                              84 VCC                           
  13 KPR                              85 KPR                           
@@ -544,13 +560,13 @@ No. Name                           No. Name
  18 KPR                              90 GND                           
  19 KPR                              91 KPR                           
  20 KPR                              92 KPR                           
- 21 KPR                              93 VCCIO-UNUSED                  
+ 21 KPR                              93 VCCIO-1.8                     
  22 KPR                              94 KPR                           
  23 KPR                              95 KPR                           
  24 KPR                              96 KPR                           
  25 KPR                              97 p_wyj1                        
  26 KPR                              98 KPR                           
- 27 VCCIO-UNUSED                     99 GND                           
+ 27 VCCIO-1.8                        99 GND                           
  28 KPR                             100 p_wyj2                        
  29 GND                             101 KPR                           
  30 KPR                             102 KPR                           
@@ -562,7 +578,7 @@ No. Name                           No. Name
  36 GND                             108 GND                           
  37 VCC                             109 VCCIO-1.8                     
  38 KPR                             110 KPR                           
- 39 KPR                             111 KPR                           
+ 39 p_wej1                          111 KPR                           
  40 KPR                             112 KPR                           
  41 KPR                             113 KPR                           
  42 KPR                             114 KPR                           
@@ -575,10 +591,10 @@ No. Name                           No. Name
  49 KPR                             121 KPR                           
  50 KPR                             122 TDO                           
  51 KPR                             123 GND                           
- 52 KPR                             124 KPR                           
+ 52 KPR                             124 p_wej2                        
  53 KPR                             125 KPR                           
  54 KPR                             126 KPR                           
- 55 VCCIO-UNUSED                    127 VCCIO-1.8                     
+ 55 VCCIO-1.8                       127 VCCIO-1.8                     
  56 KPR                             128 KPR                           
  57 KPR                             129 KPR                           
  58 KPR                             130 KPR                           

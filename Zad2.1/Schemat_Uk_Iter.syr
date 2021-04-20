@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Schemat_Uk_Iter.prj
 
@@ -78,13 +78,13 @@ wysiwyg                            : NO
 Compiling vhdl file "C:/Studia/ULiC/Zad2.1/Kod_Blok_Iter.vhd" in Library work.
 Architecture behavioral of Entity kod_blok_iter is up to date.
 Compiling vhdl file "C:/Studia/ULiC/Zad2.1/Schemat_Uk_Iter.vhf" in Library work.
-Entity <Schemat_Uk_Iter> compiled.
-Entity <Schemat_Uk_Iter> (Architecture <BEHAVIORAL>) compiled.
+Entity <schemat_uk_iter> compiled.
+Entity <schemat_uk_iter> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <Schemat_Uk_Iter> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <Schemat_Uk_Iter> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <Kod_Blok_Iter> in library <work> (architecture <behavioral>).
 
@@ -92,7 +92,7 @@ Analyzing hierarchy for entity <Kod_Blok_Iter> in library <work> (architecture <
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <Schemat_Uk_Iter> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <Schemat_Uk_Iter> in library <work> (Architecture <behavioral>).
 Entity <Schemat_Uk_Iter> analyzed. Unit <Schemat_Uk_Iter> generated.
 
 Analyzing Entity <Kod_Blok_Iter> in library <work> (Architecture <behavioral>).
@@ -167,26 +167,26 @@ Clock Enable                       : YES
 wysiwyg                            : NO
 
 Design Statistics
-# IOs                              : 8
+# IOs                              : 12
 
 Cell Usage :
-# BELS                             : 40
-#      AND2                        : 8
-#      AND3                        : 4
-#      INV                         : 16
-#      OR2                         : 12
-# IO Buffers                       : 8
-#      IBUF                        : 6
+# BELS                             : 80
+#      AND2                        : 16
+#      AND3                        : 8
+#      INV                         : 32
+#      OR2                         : 24
+# IO Buffers                       : 12
+#      IBUF                        : 10
 #      OBUF                        : 2
 =========================================================================
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.86 secs
+Total CPU time to Xst completion: 4.19 secs
  
 --> 
 
-Total memory usage is 4514848 kilobytes
+Total memory usage is 4514792 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

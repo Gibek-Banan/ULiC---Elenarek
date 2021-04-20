@@ -1,7 +1,7 @@
  
 cpldfit:  version P.20131013                        Xilinx Inc.
                                   Fitter Report
-Design Name: Automat                             Date:  4-13-2021, 10:08AM
+Design Name: Automat                             Date:  4-20-2021,  8:34AM
 Device Used: XC2C256-6-TQ144
 Fitting Status: Successful
 
@@ -9,13 +9,13 @@ Fitting Status: Successful
 
 Macrocells     Product Terms    Function Block   Registers      Pins           
 Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
-4  /256 (  2%) 9   /896  (  1%) 7   /640  (  1%) 3  /256 (  1%) 4  /118 (  3%)
+4  /256 (  2%) 10  /896  (  1%) 7   /640  (  1%) 3  /256 (  1%) 4  /118 (  3%)
 
 ** Function Block Resources **
 
 Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
 Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
-FB1       3/16      5/40     8/56     0/ 6    1/1*     0/1      0/1      0/1
+FB1       3/16      5/40     9/56     0/ 6    1/1*     0/1      0/1      0/1
 FB2       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB3       0/16      0/40     0/56     0/ 6    0/1      0/1      0/1      0/1
 FB4       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
@@ -32,7 +32,7 @@ FB14      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB15      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
 FB16      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
          -----    -------  -------   -----    ---      ---      ---      ---
-Total     4/256     7/640    9/896    1/118   1/16     0/16     0/16     0/16
+Total     4/256     7/640   10/896    1/118   1/16     0/16     0/16     0/16
 
 CTC - Control Term Clock
 CTR - Control Term Reset
@@ -79,7 +79,7 @@ stan_q              1     2     2    FB9_15  119   I/O       O       LVCMOS18   
 
 Signal              Total Total Loc     Reg     Reg Init
 Name                Pts   Inps          Use     State
-stan_FSM_FFd2       4     5     FB1_11  DFF     RESET
+stan_FSM_FFd2       5     5     FB1_11  DFF     RESET
 stan_FSM_FFd3       3     5     FB1_15  DFF     RESET
 stan_FSM_FFd1       3     5     FB1_16  DFF     RESET
 
@@ -119,7 +119,7 @@ Pin No.      - ~  - User Assigned
 This function block is part of I/O Bank number:               2
 Number of function block inputs used/remaining:               5/35
 Number of function block control terms used/remaining:        1/3
-Number of PLA product terms used/remaining:                   8/48
+Number of PLA product terms used/remaining:                   9/47
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
 (unused)                      0     FB1_1        (b)           
@@ -132,7 +132,7 @@ Name                          Pt            No.  Type    Use
 (unused)                      0     FB1_8        (b)           
 (unused)                      0     FB1_9        (b)           
 (unused)                      0     FB1_10       (b)           
-stan_FSM_FFd2                 4     FB1_11       (b)     (b)    +          
+stan_FSM_FFd2                 5     FB1_11       (b)     (b)    +          
 (unused)                      0     FB1_12  139  I/O           
 (unused)                      0     FB1_13  138  I/O           
 (unused)                      0     FB1_14  137  I/O           
@@ -516,7 +516,9 @@ FDCPE_stan_FSM_FFd2: FDCPE port map (stan_FSM_FFd2,stan_FSM_FFd2_D,clk,NOT reset
 stan_FSM_FFd2_D <= ((NOT stan_FSM_FFd2 AND NOT k AND stan_FSM_FFd3)
 	OR (NOT k AND stan_FSM_FFd3 AND stan_FSM_FFd1)
 	OR (stan_FSM_FFd2 AND k AND NOT stan_FSM_FFd3 AND 
-	NOT stan_FSM_FFd1));
+	NOT stan_FSM_FFd1)
+	OR (NOT stan_FSM_FFd2 AND k AND NOT stan_FSM_FFd3 AND 
+	stan_FSM_FFd1));
 
 FDCPE_stan_FSM_FFd3: FDCPE port map (stan_FSM_FFd3,stan_FSM_FFd3_D,clk,NOT reset,'0','1');
 stan_FSM_FFd3_D <= ((k)

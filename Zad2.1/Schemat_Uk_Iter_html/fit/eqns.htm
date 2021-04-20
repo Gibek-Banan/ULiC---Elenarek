@@ -4,47 +4,71 @@
       var design = "Schemat_Uk_Iter";
       var device = "XC2C256";
       signals = new Array("p_wyj1","p_wyj2");
-      sigNegs = new Array("OFF","ON");
+      sigNegs = new Array("OFF","OFF");
       sigTypes = new Array("","");
 
       
-           iostyle["p_wej1"]=new Array("KPR");
-        
-           iostyle["a0"]=new Array("KPR");
-        
-           iostyle["p_wej2"]=new Array("KPR");
-        
-           iostyle["a1"]=new Array("KPR");
-        
-           iostyle["a2"]=new Array("KPR");
+           iostyle["a7"]=new Array("KPR");
         
            iostyle["a3"]=new Array("KPR");
         
-            pterms["FB12_0"]=new Array("/p_wej2","p_wej1","/a0","a1");
+           iostyle["a6"]=new Array("KPR");
+        
+           iostyle["a2"]=new Array("KPR");
+        
+           iostyle["a5"]=new Array("KPR");
+        
+           iostyle["a1"]=new Array("KPR");
+        
+           iostyle["a4"]=new Array("KPR");
+        
+           iostyle["a0"]=new Array("KPR");
+        
+           iostyle["p_wej1"]=new Array("KPR");
+        
+           iostyle["p_wej2"]=new Array("KPR");
+        
+            pterms["FB12_0"]=new Array("/p_wej2","/a4","/a5","a7");
           
-            pterms["FB12_1"]=new Array("/p_wej2","/a0","/a1","a3");
+            pterms["FB12_1"]=new Array("/p_wej2","/a5","a7","/a6");
           
-            pterms["FB12_2"]=new Array("/p_wej2","/a1","a3","/a2");
+            pterms["FB12_2"]=new Array("/p_wej2","/a7","a6");
           
-            pterms["FB12_3"]=new Array("/p_wej2","/a3","a2");
+            pterms["FB12_3"]=new Array("/p_wej2","p_wej1","/a0","a1");
           
-            pterms["FB12_4"]=new Array("p_wej2","/p_wej1","/a0","/a1","/a3","/a2");
+            pterms["FB12_4"]=new Array("/p_wej2","/a0","/a1","a2");
           
-            pterms["FB12_5"]=new Array("/p_wej2","a0","a2");
+            pterms["FB12_5"]=new Array("/p_wej2","/a1","/a2","a3");
           
-            pterms["FB12_6"]=new Array("/p_wej2","/p_wej1","a1","a2");
+            pterms["FB12_6"]=new Array("/p_wej2","/a4","a5","/a3");
           
-            pterms["FB12_7"]=new Array("/p_wej2","/p_wej1","a1","a3");
+            pterms["FB12_7"]=new Array("/p_wej2","a4","/a2","/a3");
           
-            pterms["FB12_8"]=new Array("/p_wej2","a0","a1","a3");
+            pterms["FB12_8"]=new Array("p_wej2","/a4","/a5","/a7","/a6","/p_wej1","/a0","/a1","/a2","/a3");
+          
+            pterms["FB12_9"]=new Array("/a4","/a5");
+          
+            pterms["FB12_10"]=new Array("/a5","/a6");
+          
+            pterms["FB12_11"]=new Array("/a7","/a6");
+          
+            pterms["FB12_12"]=new Array("p_wej1","/a0");
+          
+            pterms["FB12_13"]=new Array("/a0","/a1");
+          
+            pterms["FB12_14"]=new Array("/a1","/a2");
+          
+            pterms["FB12_15"]=new Array("/a4","/a3");
+          
+            pterms["FB12_16"]=new Array("/a2","/a3");
           
             pterms["FB12_43"]=new Array("p_wej2");
           
-          d2["p_wyj2"]=new Array("FB12_5","FB12_7","FB12_6","FB12_8");
+          d2["p_wyj2"]=new Array("FB12_43","FB12_9","FB12_15","FB12_10","FB12_11","FB12_12","FB12_13","FB12_14","FB12_16");
           
           d1["p_wyj1"]=new Array("FB12_43");
           
-          d2["p_wyj1"]=new Array("FB12_3","FB12_0","FB12_1","FB12_2","FB12_4");
+          d2["p_wyj1"]=new Array("FB12_2","FB12_7","FB12_6","FB12_0","FB12_1","FB12_3","FB12_4","FB12_5","FB12_8");
           
 
       uimSignals = new Array();

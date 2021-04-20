@@ -14,11 +14,13 @@ INPUTS | 4 | stan_FSM_FFd2  | k  | stan_FSM_FFd3  | stan_FSM_FFd1
 INPUTMC | 3 | 0 | 10 | 0 | 14 | 0 | 15
 INPUTP | 1 | 190
 LCT | 1 | 2 | Internal_Name
-EQ | 6 | 
+EQ | 8 | 
    stan_FSM_FFd2 := !stan_FSM_FFd2 & !k & stan_FSM_FFd3
 	# !k & stan_FSM_FFd3 & stan_FSM_FFd1
 	# stan_FSM_FFd2 & k & !stan_FSM_FFd3 & 
-	!stan_FSM_FFd1;	// (3 pt, 4 inp)
+	!stan_FSM_FFd1
+	# !stan_FSM_FFd2 & k & !stan_FSM_FFd3 & 
+	stan_FSM_FFd1;	// (4 pt, 4 inp)
     stan_FSM_FFd2.CLK = clk;	// CTC	(1 pt, 1 inp)
    stan_FSM_FFd2.AR = !reset;	// GSR	(0 pt, 0 inp)
 GLOBALS | 1 | 4 | reset

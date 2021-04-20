@@ -7,17 +7,27 @@
 </td></tr><tr><td>
 </td></tr><tr><td>
 p_wyj1 <= p_wej2
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT p_wej2 AND NOT a3 AND a2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT p_wej2 AND NOT a7 AND a6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND a4 AND NOT a2 AND NOT a3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND NOT a4 AND a5 AND NOT a3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND NOT a4 AND NOT a5 AND a7)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND NOT a5 AND a7 AND NOT a6)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND p_wej1 AND NOT a0 AND a1)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND NOT a0 AND NOT a1 AND a3)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND NOT a1 AND a3 AND NOT a2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (p_wej2 AND NOT p_wej1 AND NOT a0 AND NOT a1 AND NOT a3 AND NOT a2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND NOT a0 AND NOT a1 AND a2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND NOT a1 AND NOT a2 AND a3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (p_wej2 AND NOT a4 AND NOT a5 AND NOT a7 AND NOT a6 AND NOT p_wej1 AND NOT a0 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT a1 AND NOT a2 AND NOT a3));
 </td></tr><tr><td>
 </td></tr><tr><td>
-p_wyj2 <= NOT (((NOT p_wej2 AND a0 AND a2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND NOT p_wej1 AND a1 AND a3)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND NOT p_wej1 AND a1 AND a2)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT p_wej2 AND a0 AND a1 AND a3)));
+p_wyj2 <= ((p_wej2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT a4 AND NOT a5)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT a4 AND NOT a3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT a5 AND NOT a6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT a7 AND NOT a6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (p_wej1 AND NOT a0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT a0 AND NOT a1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT a1 AND NOT a2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT a2 AND NOT a3));
 </td></tr><tr><td>
 </td></tr><tr><td>
 Register Legend:

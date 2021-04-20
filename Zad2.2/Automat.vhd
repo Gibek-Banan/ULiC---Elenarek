@@ -52,7 +52,7 @@ begin
 
         when state_4 =>
           if k = '1' then
-            stan <= state_1;
+            stan <= state_3;
           else
             stan <= state_5;
           end if;

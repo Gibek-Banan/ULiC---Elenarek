@@ -7,8 +7,8 @@
 GSET: 1=!reset.p
 GRST: 1=!reset.p
 ----------------- B l o c k 0 ------------------
-PLApt(8/56), Fanin(5/38), Clk(0/3), Bct(1/4), Pin(1/6), Mcell(3/16)
-PLApts[8/8] 4 5 2 8 0 6 7 9
+PLApt(9/56), Fanin(5/38), Clk(0/3), Bct(1/4), Pin(1/6), Mcell(3/16)
+PLApts[9/9] 4 5 2 8 0 6 7 9 10
 Fanins[ 5] stan_FSM_FFd1.n stan_FSM_FFd2.n stan_FSM_FFd3.n clk.p k.p
 clk[0] 
 CTC: (pt=0) clk ;

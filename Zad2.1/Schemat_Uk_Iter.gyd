@@ -1,12 +1,16 @@
 Pin Freeze File:  version P.20131013
 
 2C256144 XC2C256-6-TQ144
-a0 S:PIN3
-a1 S:PIN5
-a2 S:PIN7
-a3 S:PIN10
-p_wej1 S:PIN2
-p_wej2 S:PIN4
+a0 S:PIN10
+a1 S:PIN7
+a2 S:PIN5
+a3 S:PIN3
+a4 S:PIN9
+a5 S:PIN6
+a6 S:PIN4
+a7 S:PIN2
+p_wej1 S:PIN39
+p_wej2 S:PIN124
 p_wyj1 S:PIN97
 p_wyj2 S:PIN100
 

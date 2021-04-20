@@ -49,11 +49,14 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Schemat_Uk_Iter.rpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Schemat_Uk_Iter.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Schemat_Uk_Iter.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Schemat_Uk_Iter.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Schemat_Uk_Iter.tspec"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="Schemat_Uk_Iter.vhf"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="Schemat_Uk_Iter.vm6"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Schemat_Uk_Iter.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Schemat_Uk_Iter.xst"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Schemat_Uk_Iter_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Schemat_Uk_Iter_envsettings.html"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="Schemat_Uk_Iter_html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Schemat_Uk_Iter_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Schemat_Uk_Iter_pad.csv"/>
@@ -73,12 +76,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1618161009" xil_pn:in_ck="-1136006852282759741" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6450350537091824328" xil_pn:start_ts="1618161007">
+    <transform xil_pn:end_ts="1618902271" xil_pn:in_ck="-1136006852282759741" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6450350537091824328" xil_pn:start_ts="1618902269">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Schemat_Uk_Iter.vhf"/>
     </transform>
-    <transform xil_pn:end_ts="1618161015" xil_pn:in_ck="-1893459010735016847" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-5186238578038281702" xil_pn:start_ts="1618161009">
+    <transform xil_pn:end_ts="1618902277" xil_pn:in_ck="-1893459010735016847" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-5186238578038281702" xil_pn:start_ts="1618902271">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name=".lso"/>
@@ -96,11 +99,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1618161691" xil_pn:in_ck="-1136006852282757565" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3601800281084000839" xil_pn:start_ts="1618161691">
+    <transform xil_pn:end_ts="1618907857" xil_pn:in_ck="-1136006852282757565" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3601800281084000839" xil_pn:start_ts="1618907857">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1618161696" xil_pn:in_ck="-8521132311391480800" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1618161691">
+    <transform xil_pn:end_ts="1618907862" xil_pn:in_ck="-8521132311391480800" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1618907857">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Schemat_Uk_Iter.bld"/>
@@ -109,8 +112,9 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1618161710" xil_pn:in_ck="-1136006852282765058" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="-6558226716037320396" xil_pn:start_ts="1618161696">
+    <transform xil_pn:end_ts="1618907870" xil_pn:in_ck="-1136006852282765058" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="-6558226716037320396" xil_pn:start_ts="1618907862">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Schemat_Uk_Iter.chk"/>
       <outfile xil_pn:name="Schemat_Uk_Iter.cxt"/>
@@ -121,21 +125,25 @@
       <outfile xil_pn:name="Schemat_Uk_Iter.pad"/>
       <outfile xil_pn:name="Schemat_Uk_Iter.pnx"/>
       <outfile xil_pn:name="Schemat_Uk_Iter.rpt"/>
+      <outfile xil_pn:name="Schemat_Uk_Iter.tim"/>
+      <outfile xil_pn:name="Schemat_Uk_Iter.tspec"/>
       <outfile xil_pn:name="Schemat_Uk_Iter.vm6"/>
       <outfile xil_pn:name="Schemat_Uk_Iter.xml"/>
       <outfile xil_pn:name="Schemat_Uk_Iter_build.xml"/>
       <outfile xil_pn:name="Schemat_Uk_Iter_html"/>
       <outfile xil_pn:name="Schemat_Uk_Iter_pad.csv"/>
     </transform>
-    <transform xil_pn:end_ts="1618161712" xil_pn:in_ck="-1136006852282756194" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1618161710">
+    <transform xil_pn:end_ts="1618907872" xil_pn:in_ck="-1136006852282756194" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1618907870">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Schemat_Uk_Iter.jed"/>
     </transform>
     <transform xil_pn:end_ts="1618161710" xil_pn:in_ck="-1136006852282756194" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1618161708">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
   </transforms>
 

@@ -5,3 +5,10 @@ XSLTProcess Schemat_Uk_Iter_build.xml
 tsim -intstyle ise Schemat_Uk_Iter Schemat_Uk_Iter.nga 
 taengine -intstyle ise -f Schemat_Uk_Iter -w --format html1 -l Schemat_Uk_Iter_html/tim/timing_report.htm 
 hprep6 -s IEEE1149 -i Schemat_Uk_Iter 
+xst -intstyle ise -ifn "C:/Studia/ULiC/Zad2.1/Schemat_Uk_Iter.xst" -ofn "C:/Studia/ULiC/Zad2.1/Schemat_Uk_Iter.syr" 
+xst -intstyle ise -ifn "C:/Studia/ULiC/Zad2.1/Schemat_Uk_Iter.xst" -ofn "C:/Studia/ULiC/Zad2.1/Schemat_Uk_Iter.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc Schemat_Uk_Iter.ucf -p xc2c256-TQ144-6 Schemat_Uk_Iter.ngc Schemat_Uk_Iter.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Schemat_Uk_Iter.ngd 
+XSLTProcess Schemat_Uk_Iter_build.xml 
+tsim -intstyle ise Schemat_Uk_Iter Schemat_Uk_Iter.nga 
+hprep6 -s IEEE1149 -i Schemat_Uk_Iter 
