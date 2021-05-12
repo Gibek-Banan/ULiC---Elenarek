@@ -1,5 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
 entity licznik_cyfra is
   port (
     clk : in std_logic;
@@ -11,9 +13,9 @@ architecture Behavioral of licznik_cyfra is
 begin
   process (clk)
   begin
-    if rising_edge(clk_we) then
+    if rising_edge(clk) then
       licznik <= licznik + 1;
     end if;
   end process;
-  wy <= licznik
+  wy <= licznik;
   end Behavioral;

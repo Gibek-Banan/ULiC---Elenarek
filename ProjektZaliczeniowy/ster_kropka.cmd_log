@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ster_kropka.vhd -prj ProjektZaliczeniowy -o ster_kropka.spl -module ster_kropka -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr ster_kropka.spl C:/Studia/ULiC/ProjektZaliczeniowy/ster_kropka.sym 

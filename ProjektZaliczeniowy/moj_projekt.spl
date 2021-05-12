@@ -1,0 +1,12 @@
+[Inputs]
+clk
+sw0
+sw1
+b0
+b1
+[Outputs]
+=wy_ds[3:0]=
+=wy_s_j[3:0]=
+=wy_s_dz[3:0]=
+=wy_min[3:0]=
+[BiDir]

@@ -1,0 +1,6 @@
+[Inputs]
+sw0
+[Outputs]
+d_Stopwatch1
+d_Stopwatch2
+[BiDir]

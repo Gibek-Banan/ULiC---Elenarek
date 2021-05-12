@@ -1,0 +1,2 @@
+vhdtdtfi -lib work licznik_cyfra.vhd -prj ProjektZaliczeniowy -o licznik_cyfra.spl -module licznik_cyfra -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr licznik_cyfra.spl C:/Studia/ULiC/ProjektZaliczeniowy/licznik_cyfra.sym 

@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_1164.all;
 entity transkoder_7s is
     port (
         we : in std_logic_vector (3 downto 0);
-        wy : in std_logic_vector (6 downto 0);
+        wy : out std_logic_vector (6 downto 0)
     );
 end transkoder_7s;
 
@@ -24,4 +24,5 @@ begin
     "1111000" when "0111", --7
     "0000000" when "1000", --8
     "0010000" when "1001", --9
+    "1111111" when others;
 end Behavioral;

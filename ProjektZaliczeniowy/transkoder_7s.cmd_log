@@ -1,0 +1,2 @@
+vhdtdtfi -lib work transkoder_7s.vhd -prj ProjektZaliczeniowy -o transkoder_7s.spl -module transkoder_7s -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr transkoder_7s.spl C:/Studia/ULiC/ProjektZaliczeniowy/transkoder_7s.sym 

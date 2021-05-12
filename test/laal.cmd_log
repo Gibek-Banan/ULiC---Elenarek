@@ -1,0 +1,5 @@
+vhdtdtfi -lib work Aaaaa.vhd -prj test -o laal.spl -module laal -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr laal.spl C:/Studia/ULiC/test/laal.sym 
+vhdtdtfi -lib work Aaaaa.vhd -prj test -o laal.spl -module laal -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr laal.spl C:/Studia/ULiC/test/laal.sym 
+vhdtdtfi -prj test -o C:/Studia/ULiC/test/laal.vhi -module laal -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Aaaaa.vhd 

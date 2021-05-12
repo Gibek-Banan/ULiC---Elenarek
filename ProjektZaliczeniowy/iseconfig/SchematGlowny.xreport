@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-05-04T18:56:20</DateModified>
+  <DateModified>2021-05-12T11:41:25</DateModified>
   <ModuleName>SchematGlowny</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2021-05-12T10:13:07</SummaryTimeStamp>
   <SavedFilePath>C:/Studia/ULiC/ProjektZaliczeniowy/iseconfig/SchematGlowny.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Studia/ULiC/ProjektZaliczeniowy</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Studia/ULiC/ProjektZaliczeniowy\</ImplementationReportsDirectory>
   <DateInitialized>2021-05-04T18:56:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

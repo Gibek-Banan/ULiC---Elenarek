@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.all;
 entity aktywna_anoda is
   port (
     we : in std_logic_vector(1 downto 0);
-    wy : out std_logic_vector(3 downto 0);
+    wy : out std_logic_vector(3 downto 0)
   );
 end aktywna_anoda;
 

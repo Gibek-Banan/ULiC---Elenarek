@@ -1,0 +1,2 @@
+vhdtdtfi -lib work moj_projekt_Diody.vhd -prj ProjektZaliczeniowy -o moj_projekt_Diody.spl -module moj_projekt_Diody -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt_Diody.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_Diody.sym 

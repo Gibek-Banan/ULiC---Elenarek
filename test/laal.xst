@@ -1,0 +1,5 @@
+set -tmpdir "C:/Studia/ULiC/test/xst/projnav.tmp"
+set -xsthdpdir "C:/Studia/ULiC/test/xst"
+elaborate
+-ifn laal.prj
+-ifmt mixed

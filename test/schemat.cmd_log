@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Studia/ULiC/test/schemat.xst" -ofn "C:/Studia/ULiC/test/schemat.syr" 

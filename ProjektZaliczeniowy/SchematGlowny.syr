@@ -1,0 +1,158 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: SchematGlowny.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SchematGlowny.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SchematGlowny"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : SchematGlowny
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/dzielnik_100kHz_na_400Hz.vhd" in Library work.
+Architecture behavioral of Entity dzielnik_100khz_na_400hz is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/licznik_cyfra.vhd" in Library work.
+Architecture behavioral of Entity licznik_cyfra is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/aktywna_anoda.vhd" in Library work.
+Architecture behavioral of Entity aktywna_anoda is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd" in Library work.
+Architecture behavioral of Entity moj_projekt is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/mult_vec1.vhd" in Library work.
+Architecture behavioral of Entity mult_vec1 is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/transkoder_7s.vhd" in Library work.
+Architecture behavioral of Entity transkoder_7s is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/dzielnik_400Hz_na_10Hz.vhd" in Library work.
+Architecture behavioral of Entity dzielnik_400hz_na_10hz is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_Diody.vhd" in Library work.
+Architecture behavioral of Entity moj_projekt_diody is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/ster_kropka.vhd" in Library work.
+Architecture behavioral of Entity ster_kropka is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" in Library work.
+Entity <schematglowny> compiled.
+Entity <schematglowny> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <SchematGlowny> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dzielnik_100kHz_na_400Hz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <licznik_cyfra> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <aktywna_anoda> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <moj_projekt> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mult_vec1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <transkoder_7s> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dzielnik_400Hz_na_10Hz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <moj_projekt_Diody> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ster_kropka> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <SchematGlowny> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 128: Unconnected output port 'wy_ds' of component 'moj_projekt'.
+WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 128: Unconnected output port 'wy_s_j' of component 'moj_projekt'.
+WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 128: Unconnected output port 'wy_s_dz' of component 'moj_projekt'.
+WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 128: Unconnected output port 'wy_min' of component 'moj_projekt'.
+WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 155: Unconnected output port 'wy_ds' of component 'moj_projekt'.
+WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 155: Unconnected output port 'wy_s_j' of component 'moj_projekt'.
+WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 155: Unconnected output port 'wy_s_dz' of component 'moj_projekt'.
+WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 155: Unconnected output port 'wy_min' of component 'moj_projekt'.
+Entity <SchematGlowny> analyzed. Unit <SchematGlowny> generated.
+
+Analyzing Entity <dzielnik_100kHz_na_400Hz> in library <work> (Architecture <behavioral>).
+Entity <dzielnik_100kHz_na_400Hz> analyzed. Unit <dzielnik_100kHz_na_400Hz> generated.
+
+Analyzing Entity <licznik_cyfra> in library <work> (Architecture <behavioral>).
+Entity <licznik_cyfra> analyzed. Unit <licznik_cyfra> generated.
+
+Analyzing Entity <aktywna_anoda> in library <work> (Architecture <behavioral>).
+Entity <aktywna_anoda> analyzed. Unit <aktywna_anoda> generated.
+
+Analyzing Entity <moj_projekt> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd" line 26: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sw0>, <sw1>, <b0>, <b1>, <StartStop>
+ERROR:Xst:827 - "C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd" line 26: Signal s_dz cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
+--> 
+
+Total memory usage is 4498416 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work mult_vec1.vhd -prj ProjektZaliczeniowy -o mult_vec1.spl -module mult_vec1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr mult_vec1.spl C:/Studia/ULiC/ProjektZaliczeniowy/mult_vec1.sym 

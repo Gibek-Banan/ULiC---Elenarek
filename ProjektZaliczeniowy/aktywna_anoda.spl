@@ -1,0 +1,5 @@
+[Inputs]
+=we[1:0]=
+[Outputs]
+=wy[3:0]=
+[BiDir]

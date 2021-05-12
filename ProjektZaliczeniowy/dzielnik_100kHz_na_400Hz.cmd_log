@@ -1,0 +1,2 @@
+vhdtdtfi -lib work dzielnik_100kHz_na_400Hz.vhd -prj ProjektZaliczeniowy -o dzielnik_100kHz_na_400Hz.spl -module dzielnik_100kHz_na_400Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr dzielnik_100kHz_na_400Hz.spl C:/Studia/ULiC/ProjektZaliczeniowy/dzielnik_100kHz_na_400Hz.sym 
