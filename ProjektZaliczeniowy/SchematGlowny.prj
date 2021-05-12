@@ -1,6 +1,7 @@
 vhdl work "transkoder_7s.vhd"
 vhdl work "ster_kropka.vhd"
 vhdl work "mult_vec1.vhd"
+vhdl work "moj_projekt_MUX.vhd"
 vhdl work "moj_projekt_Diody.vhd"
 vhdl work "moj_projekt.vhd"
 vhdl work "licznik_cyfra.vhd"

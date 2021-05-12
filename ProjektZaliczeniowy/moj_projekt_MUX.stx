@@ -17,17 +17,17 @@ Total CPU time to Xst completion: 0.12 secs
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/mult_vec1.vhd" in Library work.
-Entity <mult_vec1> compiled.
-Entity <mult_vec1> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_MUX.vhd" in Library work.
+Entity <moj_projekt_MUX> compiled.
+Entity <moj_projekt_MUX> (Architecture <Behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> 
 
-Total memory usage is 4468436 kilobytes
+Total memory usage is 4468384 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

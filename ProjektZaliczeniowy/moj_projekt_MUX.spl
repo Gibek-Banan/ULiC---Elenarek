@@ -1,0 +1,7 @@
+[Inputs]
+sw0
+=we_Stopwatch1[3:0]=
+=we_Stopwatch2[3:0]=
+[Outputs]
+=wy[3:0]=
+[BiDir]

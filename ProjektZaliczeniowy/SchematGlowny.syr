@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: SchematGlowny.prj
 
@@ -85,14 +85,16 @@ Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd" in Libr
 Architecture behavioral of Entity moj_projekt is up to date.
 Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/mult_vec1.vhd" in Library work.
 Architecture behavioral of Entity mult_vec1 is up to date.
-Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/transkoder_7s.vhd" in Library work.
-Architecture behavioral of Entity transkoder_7s is up to date.
 Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/dzielnik_400Hz_na_10Hz.vhd" in Library work.
 Architecture behavioral of Entity dzielnik_400hz_na_10hz is up to date.
 Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_Diody.vhd" in Library work.
 Architecture behavioral of Entity moj_projekt_diody is up to date.
 Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/ster_kropka.vhd" in Library work.
 Architecture behavioral of Entity ster_kropka is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/transkoder_7s.vhd" in Library work.
+Architecture behavioral of Entity transkoder_7s is up to date.
+Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_MUX.vhd" in Library work.
+Architecture behavioral of Entity moj_projekt_mux is up to date.
 Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" in Library work.
 Entity <schematglowny> compiled.
 Entity <schematglowny> (Architecture <behavioral>) compiled.
@@ -112,27 +114,21 @@ Analyzing hierarchy for entity <moj_projekt> in library <work> (architecture <be
 
 Analyzing hierarchy for entity <mult_vec1> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <transkoder_7s> in library <work> (architecture <behavioral>).
-
 Analyzing hierarchy for entity <dzielnik_400Hz_na_10Hz> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <moj_projekt_Diody> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <ster_kropka> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <transkoder_7s> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <moj_projekt_MUX> in library <work> (architecture <behavioral>).
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <SchematGlowny> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 128: Unconnected output port 'wy_ds' of component 'moj_projekt'.
-WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 128: Unconnected output port 'wy_s_j' of component 'moj_projekt'.
-WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 128: Unconnected output port 'wy_s_dz' of component 'moj_projekt'.
-WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 128: Unconnected output port 'wy_min' of component 'moj_projekt'.
-WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 155: Unconnected output port 'wy_ds' of component 'moj_projekt'.
-WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 155: Unconnected output port 'wy_s_j' of component 'moj_projekt'.
-WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 155: Unconnected output port 'wy_s_dz' of component 'moj_projekt'.
-WARNING:Xst:753 - "C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf" line 155: Unconnected output port 'wy_min' of component 'moj_projekt'.
 Entity <SchematGlowny> analyzed. Unit <SchematGlowny> generated.
 
 Analyzing Entity <dzielnik_100kHz_na_400Hz> in library <work> (Architecture <behavioral>).
@@ -150,9 +146,9 @@ WARNING:Xst:819 - "C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd" line 26: 
 ERROR:Xst:827 - "C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd" line 26: Signal s_dz cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
 --> 
 
-Total memory usage is 4498416 kilobytes
+Total memory usage is 4514588 kilobytes
 
 Number of errors   :    1 (   0 filtered)
-Number of warnings :    9 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

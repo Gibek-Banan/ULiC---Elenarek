@@ -5,30 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf</arg>&quot; line <arg fmt="%d" index="2">128</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wy_ds</arg>&apos; of component &apos;<arg fmt="%s" index="4">moj_projekt</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf</arg>&quot; line <arg fmt="%d" index="2">128</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wy_s_j</arg>&apos; of component &apos;<arg fmt="%s" index="4">moj_projekt</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf</arg>&quot; line <arg fmt="%d" index="2">128</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wy_s_dz</arg>&apos; of component &apos;<arg fmt="%s" index="4">moj_projekt</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf</arg>&quot; line <arg fmt="%d" index="2">128</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wy_min</arg>&apos; of component &apos;<arg fmt="%s" index="4">moj_projekt</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf</arg>&quot; line <arg fmt="%d" index="2">155</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wy_ds</arg>&apos; of component &apos;<arg fmt="%s" index="4">moj_projekt</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf</arg>&quot; line <arg fmt="%d" index="2">155</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wy_s_j</arg>&apos; of component &apos;<arg fmt="%s" index="4">moj_projekt</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf</arg>&quot; line <arg fmt="%d" index="2">155</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wy_s_dz</arg>&apos; of component &apos;<arg fmt="%s" index="4">moj_projekt</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf</arg>&quot; line <arg fmt="%d" index="2">155</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">wy_min</arg>&apos; of component &apos;<arg fmt="%s" index="4">moj_projekt</arg>&apos;.
-</msg>
-
 <msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd</arg>&quot; line <arg fmt="%d" index="2">26</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;sw0&gt;, &lt;sw1&gt;, &lt;b0&gt;, &lt;b1&gt;, &lt;StartStop&gt;</arg>
 </msg>

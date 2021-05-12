@@ -1,0 +1,2 @@
+vhdtdtfi -lib work moj_projekt_MUX.vhd -prj ProjektZaliczeniowy -o moj_projekt_MUX.spl -module moj_projekt_MUX -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt_MUX.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_MUX.sym 

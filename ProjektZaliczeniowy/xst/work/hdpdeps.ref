@@ -1,74 +1,82 @@
-V3 41
+V3 45
 FL C:/Studia/ULiC/ProjektZaliczeniowy/aktywna_anoda.vhd 2021/05/09.12:24:06 P.20131013
-EN work/aktywna_anoda 1620809216 \
+EN work/aktywna_anoda 1620819490 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/aktywna_anoda.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/aktywna_anoda/Behavioral 1620809217 \
+AR work/aktywna_anoda/Behavioral 1620819491 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/aktywna_anoda.vhd \
-      EN work/aktywna_anoda 1620809216
+      EN work/aktywna_anoda 1620819490
 FL C:/Studia/ULiC/ProjektZaliczeniowy/dzielnik_100kHz_na_400Hz.vhd 2021/05/09.12:25:03 P.20131013
-EN work/dzielnik_100kHz_na_400Hz 1620809212 \
+EN work/dzielnik_100kHz_na_400Hz 1620819486 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/dzielnik_100kHz_na_400Hz.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/dzielnik_100kHz_na_400Hz/Behavioral 1620809213 \
+AR work/dzielnik_100kHz_na_400Hz/Behavioral 1620819487 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/dzielnik_100kHz_na_400Hz.vhd \
-      EN work/dzielnik_100kHz_na_400Hz 1620809212
+      EN work/dzielnik_100kHz_na_400Hz 1620819486
 FL C:/Studia/ULiC/ProjektZaliczeniowy/dzielnik_400Hz_na_10Hz.vhd 2021/05/09.12:25:31 P.20131013
-EN work/dzielnik_400Hz_na_10Hz 1620809224 \
+EN work/dzielnik_400Hz_na_10Hz 1620819496 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/dzielnik_400Hz_na_10Hz.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/dzielnik_400Hz_na_10Hz/Behavioral 1620809225 \
+AR work/dzielnik_400Hz_na_10Hz/Behavioral 1620819497 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/dzielnik_400Hz_na_10Hz.vhd \
-      EN work/dzielnik_400Hz_na_10Hz 1620809224
+      EN work/dzielnik_400Hz_na_10Hz 1620819496
 FL C:/Studia/ULiC/ProjektZaliczeniowy/licznik_cyfra.vhd 2021/05/09.12:22:51 P.20131013
-EN work/licznik_cyfra 1620809214 \
+EN work/licznik_cyfra 1620819488 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/licznik_cyfra.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/licznik_cyfra/Behavioral 1620809215 \
+AR work/licznik_cyfra/Behavioral 1620819489 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/licznik_cyfra.vhd \
-      EN work/licznik_cyfra 1620809214
+      EN work/licznik_cyfra 1620819488
 FL C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd 2021/05/12.09:24:25 P.20131013
-EN work/moj_projekt 1620809218 \
+EN work/moj_projekt 1620819492 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/moj_projekt/Behavioral 1620809219 \
-      FL C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd EN work/moj_projekt 1620809218
+AR work/moj_projekt/Behavioral 1620819493 \
+      FL C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.vhd EN work/moj_projekt 1620819492
 FL C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_Diody.vhd 2021/05/11.10:39:51 P.20131013
-EN work/moj_projekt_Diody 1620809226 \
+EN work/moj_projekt_Diody 1620819498 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_Diody.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/moj_projekt_Diody/Behavioral 1620809227 \
+AR work/moj_projekt_Diody/Behavioral 1620819499 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_Diody.vhd \
-      EN work/moj_projekt_Diody 1620809226
-FL C:/Studia/ULiC/ProjektZaliczeniowy/mult_vec1.vhd 2021/05/09.12:29:46 P.20131013
-EN work/mult_vec1 1620809220 FL C:/Studia/ULiC/ProjektZaliczeniowy/mult_vec1.vhd \
+      EN work/moj_projekt_Diody 1620819498
+FL C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_MUX.vhd 2021/05/12.13:27:16 P.20131013
+EN work/moj_projekt_MUX 1620819504 \
+      FL C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_MUX.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/mult_vec1/Behavioral 1620809221 \
-      FL C:/Studia/ULiC/ProjektZaliczeniowy/mult_vec1.vhd EN work/mult_vec1 1620809220
-FL C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf 2021/05/12.10:46:49 P.20131013
-EN work/SchematGlowny 1620809230 \
+AR work/moj_projekt_MUX/Behavioral 1620819505 \
+      FL C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt_MUX.vhd \
+      EN work/moj_projekt_MUX 1620819504
+FL C:/Studia/ULiC/ProjektZaliczeniowy/mult_vec1.vhd 2021/05/12.13:19:57 P.20131013
+EN work/mult_vec1 1620819494 FL C:/Studia/ULiC/ProjektZaliczeniowy/mult_vec1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mult_vec1/Behavioral 1620819495 \
+      FL C:/Studia/ULiC/ProjektZaliczeniowy/mult_vec1.vhd EN work/mult_vec1 1620819494
+FL C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf 2021/05/12.13:38:04 P.20131013
+EN work/SchematGlowny 1620819506 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/SchematGlowny/BEHAVIORAL 1620809231 \
+AR work/SchematGlowny/BEHAVIORAL 1620819507 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/SchematGlowny.vhf \
-      EN work/SchematGlowny 1620809230 CP dzielnik_100kHz_na_400Hz \
-      CP licznik_cyfra CP aktywna_anoda CP moj_projekt CP mult_vec1 CP transkoder_7s \
-      CP dzielnik_400Hz_na_10Hz CP moj_projekt_Diody CP INV CP ster_kropka
+      EN work/SchematGlowny 1620819506 CP dzielnik_100kHz_na_400Hz \
+      CP licznik_cyfra CP aktywna_anoda CP moj_projekt CP mult_vec1 \
+      CP dzielnik_400Hz_na_10Hz CP moj_projekt_Diody CP INV CP ster_kropka \
+      CP transkoder_7s CP moj_projekt_MUX
 FL C:/Studia/ULiC/ProjektZaliczeniowy/ster_kropka.vhd 2021/05/11.09:04:50 P.20131013
-EN work/ster_kropka 1620809228 \
+EN work/ster_kropka 1620819500 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/ster_kropka.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/ster_kropka/Behavioral 1620809229 \
-      FL C:/Studia/ULiC/ProjektZaliczeniowy/ster_kropka.vhd EN work/ster_kropka 1620809228
+AR work/ster_kropka/Behavioral 1620819501 \
+      FL C:/Studia/ULiC/ProjektZaliczeniowy/ster_kropka.vhd EN work/ster_kropka 1620819500
 FL C:/Studia/ULiC/ProjektZaliczeniowy/transkoder_7s.vhd 2021/05/09.12:31:14 P.20131013
-EN work/transkoder_7s 1620809222 \
+EN work/transkoder_7s 1620819502 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/transkoder_7s.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/transkoder_7s/Behavioral 1620809223 \
+AR work/transkoder_7s/Behavioral 1620819503 \
       FL C:/Studia/ULiC/ProjektZaliczeniowy/transkoder_7s.vhd \
-      EN work/transkoder_7s 1620809222
+      EN work/transkoder_7s 1620819502

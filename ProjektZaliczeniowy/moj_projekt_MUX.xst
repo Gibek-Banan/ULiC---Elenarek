@@ -1,0 +1,5 @@
+set -tmpdir "C:/Studia/ULiC/ProjektZaliczeniowy/xst/projnav.tmp"
+set -xsthdpdir "C:/Studia/ULiC/ProjektZaliczeniowy/xst"
+elaborate
+-ifn moj_projekt_MUX.prj
+-ifmt mixed
