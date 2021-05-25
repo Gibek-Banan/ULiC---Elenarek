@@ -8,7 +8,6 @@
     <netlist>
         <signal name="clk" />
         <signal name="XLXN_3" />
-        <signal name="XLXN_5(1:0)" />
         <signal name="sw0" />
         <signal name="d_Stopwatch1" />
         <signal name="d_Stopwatch2" />
@@ -23,7 +22,6 @@
         <signal name="XLXN_49(3:0)" />
         <signal name="XLXN_50(3:0)" />
         <signal name="XLXN_51(3:0)" />
-        <signal name="XLXN_52(3:0)" />
         <signal name="XLXN_53(3:0)" />
         <signal name="XLXN_54(3:0)" />
         <signal name="XLXN_55(3:0)" />
@@ -57,7 +55,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="aktywna_anoda">
-            <timestamp>2021-5-12T6:59:50</timestamp>
+            <timestamp>2021-5-25T6:32:43</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
@@ -65,8 +63,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="moj_projekt">
-            <timestamp>2021-5-12T7:24:40</timestamp>
-            <rect width="256" x="64" y="-384" height="384" />
+            <timestamp>2021-5-25T6:31:47</timestamp>
             <line x2="0" y1="-352" y2="-352" x1="64" />
             <line x2="0" y1="-272" y2="-272" x1="64" />
             <line x2="0" y1="-192" y2="-192" x1="64" />
@@ -80,6 +77,7 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-384" height="448" />
         </blockdef>
         <blockdef name="mult_vec1">
             <timestamp>2021-5-12T7:0:47</timestamp>
@@ -253,12 +251,6 @@
             <wire x2="448" y1="1392" y2="1392" x1="432" />
             <wire x2="512" y1="1392" y2="1392" x1="448" />
         </branch>
-        <branch name="sw1">
-            <wire x2="848" y1="1120" y2="1120" x1="672" />
-            <wire x2="1232" y1="1120" y2="1120" x1="848" />
-            <wire x2="848" y1="1120" y2="1680" x1="848" />
-            <wire x2="1264" y1="1680" y2="1680" x1="848" />
-        </branch>
         <iomarker fontsize="28" x="672" y="1120" name="sw1" orien="R180" />
         <branch name="b0">
             <wire x2="928" y1="1200" y2="1200" x1="672" />
@@ -277,14 +269,11 @@
             <wire x2="1216" y1="1248" y2="1840" x1="1216" />
             <wire x2="1264" y1="1840" y2="1840" x1="1216" />
         </branch>
-        <iomarker fontsize="28" x="672" y="1280" name="b1" orien="R180" />
         <instance x="48" y="1424" name="XLXI_9" orien="R0">
         </instance>
         <iomarker fontsize="28" x="512" y="1328" name="d_Stopwatch1" orien="R0" />
         <iomarker fontsize="28" x="512" y="1392" name="d_Stopwatch2" orien="R0" />
         <instance x="1232" y="1312" name="XLXI_4" orien="R0">
-        </instance>
-        <instance x="1264" y="1872" name="XLXI_8" orien="R0">
         </instance>
         <branch name="XLXN_30">
             <wire x2="1136" y1="1600" y2="1600" x1="1120" />
@@ -361,25 +350,11 @@
             <wire x2="1872" y1="1184" y2="1280" x1="1872" />
             <wire x2="2128" y1="1184" y2="1184" x1="1872" />
         </branch>
-        <branch name="XLXN_54(3:0)">
-            <wire x2="1776" y1="1648" y2="1648" x1="1648" />
-            <wire x2="1776" y1="1648" y2="1680" x1="1776" />
-            <wire x2="1920" y1="1680" y2="1680" x1="1776" />
-        </branch>
-        <branch name="XLXN_55(3:0)">
-            <wire x2="1776" y1="1712" y2="1712" x1="1648" />
-            <wire x2="1776" y1="1712" y2="1744" x1="1776" />
-            <wire x2="1920" y1="1744" y2="1744" x1="1776" />
-        </branch>
-        <branch name="XLXN_56(3:0)">
-            <wire x2="1776" y1="1776" y2="1776" x1="1648" />
-            <wire x2="1776" y1="1776" y2="1808" x1="1776" />
-            <wire x2="1920" y1="1808" y2="1808" x1="1776" />
-        </branch>
         <branch name="XLXN_57(3:0)">
             <wire x2="1776" y1="1840" y2="1840" x1="1648" />
             <wire x2="1776" y1="1840" y2="1872" x1="1776" />
-            <wire x2="1920" y1="1872" y2="1872" x1="1776" />
+            <wire x2="1904" y1="1872" y2="1872" x1="1776" />
+            <wire x2="1920" y1="1872" y2="1872" x1="1904" />
         </branch>
         <branch name="XLXN_58(3:0)">
             <wire x2="2608" y1="1616" y2="1616" x1="2304" />
@@ -412,5 +387,32 @@
             <wire x2="1584" y1="640" y2="656" x1="1584" />
             <wire x2="1680" y1="640" y2="640" x1="1584" />
         </branch>
+        <iomarker fontsize="28" x="672" y="1280" name="b1" orien="R180" />
+        <branch name="XLXN_56(3:0)">
+            <wire x2="1776" y1="1776" y2="1776" x1="1648" />
+            <wire x2="1776" y1="1776" y2="1808" x1="1776" />
+            <wire x2="1904" y1="1808" y2="1808" x1="1776" />
+            <wire x2="1920" y1="1808" y2="1808" x1="1904" />
+        </branch>
+        <branch name="XLXN_55(3:0)">
+            <wire x2="1776" y1="1712" y2="1712" x1="1648" />
+            <wire x2="1776" y1="1712" y2="1744" x1="1776" />
+            <wire x2="1904" y1="1744" y2="1744" x1="1776" />
+            <wire x2="1920" y1="1744" y2="1744" x1="1904" />
+        </branch>
+        <branch name="XLXN_54(3:0)">
+            <wire x2="1776" y1="1648" y2="1648" x1="1648" />
+            <wire x2="1776" y1="1648" y2="1680" x1="1776" />
+            <wire x2="1904" y1="1680" y2="1680" x1="1776" />
+            <wire x2="1920" y1="1680" y2="1680" x1="1904" />
+        </branch>
+        <branch name="sw1">
+            <wire x2="848" y1="1120" y2="1120" x1="672" />
+            <wire x2="1232" y1="1120" y2="1120" x1="848" />
+            <wire x2="848" y1="1120" y2="1680" x1="848" />
+            <wire x2="1264" y1="1680" y2="1680" x1="848" />
+        </branch>
+        <instance x="1264" y="1872" name="XLXI_8" orien="R0">
+        </instance>
     </sheet>
 </drawing>

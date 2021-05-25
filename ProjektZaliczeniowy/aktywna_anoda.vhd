@@ -12,8 +12,8 @@ architecture Behavioral of aktywna_anoda is
 begin
   with we select
     wy <=
-    "1110" when "00",
-    "1101" when "01",
-    "1011" when "10",
-    "0111" when others;
+    "0111" when "00",
+    "1011" when "01",
+    "1101" when "10",
+    "1110" when others;
 end Behavioral;

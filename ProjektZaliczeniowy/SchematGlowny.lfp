@@ -1,0 +1,5 @@
+# begin LFP file C:\Studia\ULiC\ProjektZaliczeniowy\SchematGlowny.lfp
+designfile SchematGlowny.vhd
+parttype xc2c256-tq144-6
+bus_delimiter 0;
+set_busdelim_onsave 1;

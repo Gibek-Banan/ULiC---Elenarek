@@ -1,0 +1,184 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK2: 7=clk.p
+----------------- B l o c k 0 ------------------
+PLApt(20/56), Fanin(19/38), Clk(1/3), Bct(2/4), Pin(1/6), Mcell(16/16)
+PLApts[20/56] 54 55 56 57 35 6 58 47 59 49 48 51 134 46 () () 34 () () 3 () () () () () () () () () () () () () () () () () () () () () () () () () () 52 () () 50 () () 60 () () 53
+Fanins[19] wy_sterowanie_kropka.n N_PZ_310.n XLXI_1/licznik<0>.n XLXI_1/licznik<1>.n XLXI_1/licznik<2>.n XLXI_1/licznik<3>.n XLXI_1/licznik<4>.n XLXI_1/licznik<5>.n XLXI_1/licznik<6>.n XLXI_7/licznik<0>.n XLXI_7/licznik<1>.n XLXI_7/licznik<2>.n XLXI_7/licznik<3>.n XLXI_7/licznik<4>.n XLXN_3.n XLXN_32.n XLXN_49<1>.n b0.p sw1.p
+clk[1] clk 
+CTC: (pt=35) XLXN_3 ;
+CTR: (pt=6) sw1' b0' ;
+CTS: 
+CTE: 
+vref: [0]
+Signal[17] [b0(143)] [XLXI_1/licznik<2>(160)] [XLXI_1/licznik<0>(159)] [XLXI_1/licznik<3>(155)]  
+           [XLXI_1/licznik<4>(154)] [XLXI_1/licznik<5>(153)] [XLXI_1/licznik<6>(152)] [XLXN_3(151)]  
+           [XLXI_1/licznik<1>(149)] [XLXI_7/licznik<1>(146)] [XLXI_7/licznik<2>(145)]  
+           [XLXI_7/licznik<4>(158)] [XLXI_7/licznik<0>(157)] [XLXI_7/licznik<3>(156)] [XLXN_32(150)]  
+           [XLXN_61<1>(148)] [XLXN_49<2>(147)] 
+Signal[17] [ 0: XLXI_7/licznik<2>(145)  ][ 1: XLXI_7/licznik<1>(146)  ][ 2: XLXN_49<2>(147) b0(143)  ][ 3:  
+           XLXN_61<1>(148) (142)  ][ 4: XLXI_1/licznik<1>(149)  ][ 5: XLXN_32(150) (140)  ][ 6: XLXN_3(151)  
+            ][ 7: XLXI_1/licznik<6>(152)  ][ 8: XLXI_1/licznik<5>(153)  ][ 9: XLXI_1/licznik<4>(154)  ][ 10:  
+           XLXI_1/licznik<3>(155)  ][ 11: XLXI_7/licznik<3>(156) (139)  ][ 12: XLXI_7/licznik<0>(157) (138)  
+            ][ 13: XLXI_7/licznik<4>(158) (137)  ][ 14: XLXI_1/licznik<0>(159)  ][ 15:  
+           XLXI_1/licznik<2>(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(56/56), Fanin(36/38), Clk(0/3), Bct(2/4), Pin(0/8), Mcell(10/16)
+PLApts[56/56] 115 116 117 118 34 6 119 120 121 122 125 67 72 156 79 84 93 98 103 108 66 71 78 83 92 97 102 107 69 74 81 86 95 100 105 110 68 73 80 85 94 99 104 109 1 5 38 143 18 153 19 136 138 142 151 155
+Fanins[36] wy_sterowanie_kropka.n N_PZ_310.n N_PZ_362.n N_PZ_394.n N_PZ_413.n XLXI_4/StartStop.n XLXN_32.n XLXN_49<0>.n XLXN_49<1>.n XLXN_49<2>.n XLXN_49<3>.n XLXN_50<0>.n XLXN_50<1>.n XLXN_50<2>.n XLXN_50<3>.n XLXN_51<0>.n XLXN_51<1>.n XLXN_51<2>.n XLXN_51<3>.n XLXN_53<0>.n XLXN_53<1>.n XLXN_53<2>.n XLXN_54<0>.n XLXN_54<2>.n XLXN_55<0>.n XLXN_55<2>.n XLXN_56<0>.n XLXN_56<2>.n XLXN_57<0>.n XLXN_57<2>.n XLXN_60<1>.n XLXN_60<3>.n XLXN_61<1>.n b0.p sw0.p sw1.p
+clk[0] 
+CTC: (pt=34) XLXN_32 ;
+CTR: (pt=6) sw1' b0' ;
+CTS: 
+CTE: 
+vref: [0]
+Signal[10] [XLXI_15/wy<0>12(176)] [N_PZ_362(171)] [N_PZ_363(170)] [N_PZ_374(169)] [N_PZ_300(168)]  
+           [XLXN_49<0>(167)] [XLXN_49<3>(166)] [XLXN_53<1>(162)] [XLXN_53<0>(175)] [XLXN_53<3>(174)] 
+Signal[10] [ 0: (2)  ][ 1: XLXN_53<1>(162)  ][ 2: (3)  ][ 3: (4)  ][ 4: (5)  ][ 5: XLXN_49<3>(166)  ][ 6:  
+           XLXN_49<0>(167)  ][ 7: N_PZ_300(168)  ][ 8: N_PZ_374(169)  ][ 9: N_PZ_363(170)  ][ 10:  
+           N_PZ_362(171)  ][ 11: (6)  ][ 12: (7)  ][ 13: XLXN_53<3>(174) (9)  ][ 14: XLXN_53<0>(175) (10)  ] 
+           [ 15: XLXI_15/wy<0>12(176)  ]
+----------------- B l o c k 2 ------------------
+PLApt(41/56), Fanin(23/38), Clk(0/3), Bct(2/4), Pin(0/6), Mcell(16/16)
+PLApts[41/50] 2 5 43 168 34 6 26 27 161 163 159 167 14 160 15 29 162 166 176 178 180 170 175 179 30 177 31 165 173 183 16 17 33 164 182 172 174 28 32 () 181 () () () () () () () () 171
+Fanins[23] N_PZ_311.n N_PZ_395.n N_PZ_414.n XLXI_8/StartStop.n XLXN_32.n XLXN_54<0>.n XLXN_54<1>.n XLXN_54<2>.n XLXN_54<3>.n XLXN_55<0>.n XLXN_55<1>.n XLXN_55<2>.n XLXN_55<3>.n XLXN_56<0>.n XLXN_56<1>.n XLXN_56<2>.n XLXN_56<3>.n XLXN_57<0>.n XLXN_57<1>.n XLXN_57<2>.n b0.p sw0.p sw1.p
+clk[0] 
+CTC: (pt=34) XLXN_32 ;
+CTR: (pt=6) sw1' b0' ;
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [XLXN_54<0>(191)] [XLXN_54<3>(189)] [XLXN_55<0>(188)] [XLXN_57<1>(187)] [XLXN_57<0>(186)]  
+           [XLXN_56<2>(185)] [XLXN_55<3>(184)] [XLXN_56<0>(183)] [XLXN_57<2>(182)] [XLXN_57<3>(180)]  
+           [XLXN_56<1>(192)] [XLXN_56<3>(190)] [XLXN_54<1>(181)] [XLXN_55<1>(179)] [N_PZ_414(178)]  
+           [XLXN_54<2>(177)] 
+Signal[16] [ 0: XLXN_54<2>(177) (136)  ][ 1: N_PZ_414(178) (135)  ][ 2: XLXN_55<1>(179) (134)  ][ 3:  
+           XLXN_57<3>(180)  ][ 4: XLXN_54<1>(181) (133)  ][ 5: XLXN_57<2>(182)  ][ 6: XLXN_56<0>(183)  ][ 7:  
+           XLXN_55<3>(184)  ][ 8: XLXN_56<2>(185)  ][ 9: XLXN_57<0>(186)  ][ 10: XLXN_57<1>(187)  ][ 11:  
+           XLXN_55<0>(188)  ][ 12: XLXN_54<3>(189)  ][ 13: XLXN_56<3>(190) (132)  ][ 14: XLXN_54<0>(191)  ] 
+           [ 15: XLXN_56<1>(192) (131)  ]
+----------------- B l o c k 3 ------------------
+PLApt(51/56), Fanin(35/38), Clk(0/3), Bct(2/4), Pin(0/8), Mcell(16/16)
+PLApts[51/51] 10 11 21 137 34 6 141 145 150 154 4 22 23 140 148 158 169 12 13 25 139 157 147 149 20 144 24 65 70 77 82 146 91 96 101 106 75 152 76 87 88 111 112 135 113 114 36 37 9 39 40
+Fanins[35] wy_sterowanie_kropka.n N_PZ_310.n N_PZ_394.n N_PZ_413.n N_PZ_414.n XLXI_4/StartStop.n XLXN_32.n XLXN_49<0>.n XLXN_49<1>.n XLXN_49<2>.n XLXN_49<3>.n XLXN_50<0>.n XLXN_50<1>.n XLXN_50<2>.n XLXN_50<3>.n XLXN_51<0>.n XLXN_51<1>.n XLXN_51<2>.n XLXN_51<3>.n XLXN_53<0>.n XLXN_53<1>.n XLXN_53<3>.n XLXN_54<1>.n XLXN_54<3>.n XLXN_55<1>.n XLXN_55<3>.n XLXN_56<1>.n XLXN_56<3>.n XLXN_57<1>.n XLXN_57<3>.n XLXN_61<1>.n b0.p b1.p sw0.p sw1.p
+clk[0] 
+CTC: (pt=34) XLXN_32 ;
+CTR: (pt=6) sw1' b0' ;
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [XLXN_50<0>(208)] [XLXN_51<2>(207)] [XLXN_50<3>(205)] [XLXN_51<0>(203)] [XLXN_53<2>(202)]  
+           [XLXN_51<1>(201)] [XLXN_51<3>(200)] [XLXN_49<1>(199)] [XLXN_50<1>(206)] [N_PZ_413(204)]  
+           [XLXN_50<2>(198)] [XLXN_60<1>(197)] [XLXN_60<3>(196)] [XLXN_55<2>(195)] [N_PZ_310(194)]  
+           [XLXI_4/StartStop(193)] 
+Signal[16] [ 0: XLXI_4/StartStop(193) (11)  ][ 1: N_PZ_310(194) (12)  ][ 2: XLXN_55<2>(195) (13)  ][ 3:  
+           XLXN_60<3>(196) (14)  ][ 4: XLXN_60<1>(197) (15)  ][ 5: XLXN_50<2>(198) (16)  ][ 6:  
+           XLXN_49<1>(199)  ][ 7: XLXN_51<3>(200)  ][ 8: XLXN_51<1>(201)  ][ 9: XLXN_53<2>(202)  ][ 10:  
+           XLXN_51<0>(203)  ][ 11: N_PZ_413(204) (17)  ][ 12: XLXN_50<3>(205)  ][ 13: XLXN_50<1>(206) (18)  ] 
+           [ 14: XLXN_51<2>(207)  ][ 15: XLXN_50<0>(208)  ]
+----------------- B l o c k 4 ------------------
+PLApt(10/56), Fanin(15/38), Clk(0/3), Bct(1/4), Pin(0/5), Mcell(5/16)
+PLApts[10/47] 8 44 45 41 4 42 123 196 () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 62 () () 61
+Fanins[15] N_PZ_300.n XLXI_8/StartStop.n XLXN_53<1>.n XLXN_53<2>.n XLXN_53<3>.n XLXN_54<0>.n XLXN_57<1>.n XLXN_57<2>.n XLXN_57<3>.n XLXN_60<1>.n XLXN_60<3>.n b0.p b1.p sw0.p sw1.p
+clk[0] 
+CTC: (pt=4) sw1 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 5] [XLXI_8/StartStop(224)] [N_PZ_311(223)] [N_PZ_394(221)] [N_PZ_395(220)] [N_PZ_467(219)] 
+Signal[ 5] [ 0:  ][ 1: (33)  ][ 2:  ][ 3: (32)  ][ 4: (31)  ][ 5: (30)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  
+           N_PZ_467(219)  ][ 11: N_PZ_395(220)  ][ 12: N_PZ_394(221)  ][ 13: (28)  ][ 14: N_PZ_311(223)  ] 
+           [ 15: XLXI_8/StartStop(224)  ]
+----------------- B l o c k 5 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(2/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [clk(38)] [sw0(39)] 
+Signal[ 2] [ 0: (34)  ][ 1: (35)  ][ 2:  ][ 3: clk(38)  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ] 
+           [ 11: sw0(39)  ][ 12: (40)  ][ 13: (41)  ][ 14: (42)  ][ 15: (43)  ]
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+PLApt(4/56), Fanin(2/38), Clk(0/3), Bct(0/4), Pin(5/8), Mcell(4/16)
+PLApts[4/56] () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 89 () () 90 () () 63 () () 64
+Fanins[ 2] wy_sterowanie_kropka.n XLXN_61<1>.n
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 5] [wy_aktywna_anoda<0>(320),wy_aktywna_anoda<0>(130)]  
+           [wy_aktywna_anoda<1>(319),wy_aktywna_anoda<1>(129)]  
+           [wy_aktywna_anoda<2>(318),wy_aktywna_anoda<2>(128)]  
+           [wy_aktywna_anoda<3>(317),wy_aktywna_anoda<3>(126)] [sw1(124)] 
+Signal[ 5] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: (120)  ][ 5: (121)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10: sw1(124)  
+            ][ 11: (125)  ][ 12: wy_aktywna_anoda<3>(317) wy_aktywna_anoda<3>(126)  ][ 13:  
+           wy_aktywna_anoda<2>(318) wy_aktywna_anoda<2>(128)  ][ 14: wy_aktywna_anoda<1>(319)  
+           wy_aktywna_anoda<1>(129)  ][ 15: wy_aktywna_anoda<0>(320) wy_aktywna_anoda<0>(130)  ]
+----------------- B l o c k 11 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/6), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [b1(94)] 
+Signal[ 1] [ 0:  ][ 1: (100)  ][ 2:  ][ 3:  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10: (98)  ][ 11:  
+           (97)  ][ 12: (96)  ][ 13: (95)  ][ 14: b1(94)  ][ 15:  ]
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+PLApt(5/56), Fanin(6/38), Clk(0/3), Bct(0/4), Pin(3/8), Mcell(3/16)
+PLApts[5/26] 184 188 193 () () () () () () () () () () () () () () () () 1 () () () () () 2
+Fanins[ 6] N_PZ_300.n N_PZ_363.n N_PZ_467.n XLXN_60<1>.n XLXN_60<3>.n sw0.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 3] [wy_transkoder_7s<6>(368),wy_transkoder_7s<6>(61)] [d_Stopwatch1(356),d_Stopwatch1(69)]  
+           [d_Stopwatch2(358),d_Stopwatch2(68)] 
+Signal[ 3] [ 0: (74)  ][ 1: (71)  ][ 2: (70)  ][ 3: d_Stopwatch1(356) d_Stopwatch1(69)  ][ 4:  ][ 5:  
+           d_Stopwatch2(358) d_Stopwatch2(68)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11:  ][ 12: (66)  ] 
+           [ 13: (64)  ][ 14:  ][ 15: wy_transkoder_7s<6>(368) wy_transkoder_7s<6>(61)  ]
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------
+PLApt(20/56), Fanin(20/38), Clk(0/3), Bct(1/4), Pin(7/7), Mcell(7/16)
+PLApts[20/47] 126 127 128 129 35 130 131 132 133 191 124 194 195 185 189 187 190 184 192 () () () () () () () () () () () () () () () () () () () () () () () () () () () 186
+Fanins[20] wy_sterowanie_kropka.n N_PZ_300.n N_PZ_362.n N_PZ_363.n N_PZ_374.n N_PZ_467.n XLXI_15/wy<0>12.n XLXN_3.n XLXN_49<0>.n XLXN_50<0>.n XLXN_51<0>.n XLXN_53<0>.n XLXN_54<0>.n XLXN_55<0>.n XLXN_56<0>.n XLXN_57<0>.n XLXN_60<1>.n XLXN_60<3>.n XLXN_61<1>.n sw0.p
+clk[0] 
+CTC: (pt=35) XLXN_3 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 7] [wy_sterowanie_kropka(390),wy_sterowanie_kropka(59)]  
+           [wy_transkoder_7s<4>(396),wy_transkoder_7s<4>(57)]  
+           [wy_transkoder_7s<5>(399),wy_transkoder_7s<5>(54)]  
+           [wy_transkoder_7s<1>(400),wy_transkoder_7s<1>(53)]  
+           [wy_transkoder_7s<3>(395),wy_transkoder_7s<3>(58)]  
+           [wy_transkoder_7s<2>(389),wy_transkoder_7s<2>(60)]  
+           [wy_transkoder_7s<0>(397),wy_transkoder_7s<0>(56)] 
+Signal[ 7] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: wy_transkoder_7s<2>(389) wy_transkoder_7s<2>(60)  ][ 5:  
+           wy_sterowanie_kropka(390) wy_sterowanie_kropka(59)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  
+           wy_transkoder_7s<3>(395) wy_transkoder_7s<3>(58)  ][ 11: wy_transkoder_7s<4>(396)  
+           wy_transkoder_7s<4>(57)  ][ 12: wy_transkoder_7s<0>(397) wy_transkoder_7s<0>(56)  ][ 13:  ][ 14:  
+           wy_transkoder_7s<5>(399) wy_transkoder_7s<5>(54)  ][ 15: wy_transkoder_7s<1>(400)  
+           wy_transkoder_7s<1>(53)  ]

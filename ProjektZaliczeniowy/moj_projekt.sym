@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="moj_projekt">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2021-5-12T7:24:40</timestamp>
+    <timestamp>2021-5-25T6:31:47</timestamp>
     <pin polarity="Input" x="0" y="-352" name="clk" />
     <pin polarity="Input" x="0" y="-272" name="sw0" />
     <pin polarity="Input" x="0" y="-192" name="sw1" />
@@ -22,7 +22,6 @@
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-160" type="pin wy_s_j(3:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-96" type="pin wy_s_dz(3:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-32" type="pin wy_min(3:0)" />
-        <rect width="256" x="64" y="-384" height="384" />
         <line x2="0" y1="-352" y2="-352" x1="64" />
         <line x2="0" y1="-272" y2="-272" x1="64" />
         <line x2="0" y1="-192" y2="-192" x1="64" />
@@ -36,5 +35,6 @@
         <line x2="384" y1="-96" y2="-96" x1="320" />
         <rect width="64" x="320" y="-44" height="24" />
         <line x2="384" y1="-32" y2="-32" x1="320" />
+        <rect width="256" x="64" y="-384" height="448" />
     </graph>
 </symbol>

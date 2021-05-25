@@ -1,0 +1,65 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+b0 S:PIN143
+b1 S:PIN94
+clk S:PIN38
+sw0 S:PIN39
+sw1 S:PIN124
+d_Stopwatch1 S:PIN69
+d_Stopwatch2 S:PIN68
+wy_aktywna_anoda<0> S:PIN130
+wy_aktywna_anoda<1> S:PIN129
+wy_aktywna_anoda<2> S:PIN128
+wy_aktywna_anoda<3> S:PIN126
+wy_sterowanie_kropka S:PIN59
+wy_transkoder_7s<0> S:PIN56
+wy_transkoder_7s<1> S:PIN53
+wy_transkoder_7s<2> S:PIN60
+wy_transkoder_7s<3> S:PIN58
+wy_transkoder_7s<4> S:PIN57
+wy_transkoder_7s<5> S:PIN54
+wy_transkoder_7s<6> S:PIN61
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 XLXI_7/licznik<2> XLXI_7/licznik<1> XLXN_49<2> XLXN_61<1>
+		 XLXI_1/licznik<1> XLXN_32 XLXN_3 XLXI_1/licznik<6>
+		 XLXI_1/licznik<5> XLXI_1/licznik<4> XLXI_1/licznik<3> XLXI_7/licznik<3>
+		 XLXI_7/licznik<0> XLXI_7/licznik<4> XLXI_1/licznik<0> XLXI_1/licznik<2>
+		
+PARTITION FB2_2 XLXN_53<1>
+PARTITION FB2_6 XLXN_49<3> XLXN_49<0> N_PZ_300 N_PZ_374
+		 N_PZ_363 N_PZ_362
+PARTITION FB2_14 XLXN_53<3> XLXN_53<0> XLXI_15/wy<0>12
+PARTITION FB3_1 XLXN_54<2> N_PZ_414 XLXN_55<1> XLXN_57<3>
+		 XLXN_54<1> XLXN_57<2> XLXN_56<0> XLXN_55<3>
+		 XLXN_56<2> XLXN_57<0> XLXN_57<1> XLXN_55<0>
+		 XLXN_54<3> XLXN_56<3> XLXN_54<0> XLXN_56<1>
+		
+PARTITION FB4_1 XLXI_4/StartStop N_PZ_310 XLXN_55<2> XLXN_60<3>
+		 XLXN_60<1> XLXN_50<2> XLXN_49<1> XLXN_51<3>
+		 XLXN_51<1> XLXN_53<2> XLXN_51<0> N_PZ_413
+		 XLXN_50<3> XLXN_50<1> XLXN_51<2> XLXN_50<0>
+		
+PARTITION FB5_11 N_PZ_467 N_PZ_395 N_PZ_394
+PARTITION FB5_15 N_PZ_311 XLXI_8/StartStop
+
+
+
+
+
+PARTITION FB11_13 wy_aktywna_anoda<3> wy_aktywna_anoda<2> wy_aktywna_anoda<1> wy_aktywna_anoda<0>
+		
+
+
+PARTITION FB14_4 d_Stopwatch1
+PARTITION FB14_6 d_Stopwatch2
+PARTITION FB14_16 wy_transkoder_7s<6>
+
+PARTITION FB16_5 wy_transkoder_7s<2> wy_sterowanie_kropka
+PARTITION FB16_11 wy_transkoder_7s<3> wy_transkoder_7s<4> wy_transkoder_7s<0>
+PARTITION FB16_15 wy_transkoder_7s<5> wy_transkoder_7s<1>
+

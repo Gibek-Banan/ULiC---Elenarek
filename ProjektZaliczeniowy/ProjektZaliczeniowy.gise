@@ -23,17 +23,43 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="SchematGlowny.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="SchematGlowny.chk"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SchematGlowny.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="SchematGlowny.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="SchematGlowny.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="SchematGlowny.jed"/>
     <file xil_pn:fileType="FILE_JHD" xil_pn:name="SchematGlowny.jhd"/>
+    <file xil_pn:fileType="FILE_LFP" xil_pn:name="SchematGlowny.lfp"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="SchematGlowny.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SchematGlowny.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="SchematGlowny.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="SchematGlowny.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SchematGlowny.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="SchematGlowny.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SchematGlowny.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="SchematGlowny.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="SchematGlowny.pnx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SchematGlowny.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SchematGlowny.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SchematGlowny.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SchematGlowny.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SchematGlowny.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SchematGlowny.tspec"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="SchematGlowny.vhf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="SchematGlowny.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SchematGlowny.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SchematGlowny.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SchematGlowny_build.xml"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="SchematGlowny_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="SchematGlowny_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SchematGlowny_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="SchematGlowny_pad.csv"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="SchematGlowny_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SchematGlowny_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SchematGlowny_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="aktywna_anoda.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="aktywna_anoda.spl"/>
@@ -86,6 +112,7 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="transkoder_7s.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="transkoder_7s.xst"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -94,19 +121,22 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1620819485" xil_pn:in_ck="-2526059170884976591" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="647497775548237734" xil_pn:start_ts="1620819483">
+    <transform xil_pn:end_ts="1621924510" xil_pn:in_ck="-2526059170884976591" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="647497775548237734" xil_pn:start_ts="1621924508">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="SchematGlowny.vhf"/>
     </transform>
-    <transform xil_pn:end_ts="1620819488" xil_pn:in_ck="5568973419370089329" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="1603619419790365192" xil_pn:start_ts="1620819485">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1621924520" xil_pn:in_ck="5568973419370089329" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="1603619419790365192" xil_pn:start_ts="1621924510">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="SchematGlowny.jhd"/>
       <outfile xil_pn:name="SchematGlowny.lso"/>
+      <outfile xil_pn:name="SchematGlowny.ngc"/>
+      <outfile xil_pn:name="SchematGlowny.ngr"/>
       <outfile xil_pn:name="SchematGlowny.prj"/>
+      <outfile xil_pn:name="SchematGlowny.stx"/>
       <outfile xil_pn:name="SchematGlowny.syr"/>
       <outfile xil_pn:name="SchematGlowny.xst"/>
       <outfile xil_pn:name="SchematGlowny_vhdl.prj"/>
@@ -114,6 +144,52 @@
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1621324479" xil_pn:in_ck="-2526059170884974415" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6111728934192021671" xil_pn:start_ts="1621324479">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1621924527" xil_pn:in_ck="5495326451191551868" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1621924520">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SchematGlowny.bld"/>
+      <outfile xil_pn:name="SchematGlowny.ngd"/>
+      <outfile xil_pn:name="SchematGlowny_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1621924547" xil_pn:in_ck="-2526059170884981908" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="-7088470458257153840" xil_pn:start_ts="1621924527">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SchematGlowny.chk"/>
+      <outfile xil_pn:name="SchematGlowny.cxt"/>
+      <outfile xil_pn:name="SchematGlowny.gyd"/>
+      <outfile xil_pn:name="SchematGlowny.log"/>
+      <outfile xil_pn:name="SchematGlowny.mfd"/>
+      <outfile xil_pn:name="SchematGlowny.nga"/>
+      <outfile xil_pn:name="SchematGlowny.pad"/>
+      <outfile xil_pn:name="SchematGlowny.pnx"/>
+      <outfile xil_pn:name="SchematGlowny.rpt"/>
+      <outfile xil_pn:name="SchematGlowny.tim"/>
+      <outfile xil_pn:name="SchematGlowny.tspec"/>
+      <outfile xil_pn:name="SchematGlowny.vm6"/>
+      <outfile xil_pn:name="SchematGlowny.xml"/>
+      <outfile xil_pn:name="SchematGlowny_build.xml"/>
+      <outfile xil_pn:name="SchematGlowny_html"/>
+      <outfile xil_pn:name="SchematGlowny_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1621924550" xil_pn:in_ck="-2526059170884973044" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1621924547">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SchematGlowny.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1621324503" xil_pn:in_ck="-2526059170884973044" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1621324500">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
   </transforms>
 

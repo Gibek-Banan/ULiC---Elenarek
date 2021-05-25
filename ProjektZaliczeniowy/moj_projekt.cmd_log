@@ -2,3 +2,23 @@ vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -
 spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
 vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
+vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
+vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
+vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
+vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
+vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
+vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
+vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
+vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
+vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 
+vhdtdtfi -lib work moj_projekt.vhd -prj ProjektZaliczeniowy -o moj_projekt.spl -module moj_projekt -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr moj_projekt.spl C:/Studia/ULiC/ProjektZaliczeniowy/moj_projekt.sym 

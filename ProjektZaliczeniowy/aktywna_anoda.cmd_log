@@ -2,3 +2,5 @@ vhdtdtfi -lib work aktywna_anoda.vhd -prj ProjektZaliczeniowy -o aktywna_anoda.s
 spl2sym -intstyle ise -family xbr aktywna_anoda.spl C:/Studia/ULiC/ProjektZaliczeniowy/aktywna_anoda.sym 
 vhdtdtfi -lib work aktywna_anoda.vhd -prj ProjektZaliczeniowy -o aktywna_anoda.spl -module aktywna_anoda -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family xbr aktywna_anoda.spl C:/Studia/ULiC/ProjektZaliczeniowy/aktywna_anoda.sym 
+vhdtdtfi -lib work aktywna_anoda.vhd -prj ProjektZaliczeniowy -o aktywna_anoda.spl -module aktywna_anoda -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr aktywna_anoda.spl C:/Studia/ULiC/ProjektZaliczeniowy/aktywna_anoda.sym 

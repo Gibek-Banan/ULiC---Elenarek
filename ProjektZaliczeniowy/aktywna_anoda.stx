@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to C:/Studia/ULiC/ProjektZaliczeniowy/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -18,15 +18,16 @@ Total CPU time to Xst completion: 0.11 secs
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Studia/ULiC/ProjektZaliczeniowy/aktywna_anoda.vhd" in Library work.
-Architecture behavioral of Entity aktywna_anoda is up to date.
+Entity <aktywna_anoda> compiled.
+Entity <aktywna_anoda> (Architecture <behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> 
 
-Total memory usage is 4468396 kilobytes
+Total memory usage is 4468388 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

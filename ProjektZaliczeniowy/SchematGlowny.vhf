@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : SchematGlowny.vhf
--- /___/   /\     Timestamp : 05/12/2021 13:38:04
+-- /___/   /\     Timestamp : 05/25/2021 08:35:09
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

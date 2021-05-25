@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="aktywna_anoda">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2021-5-12T6:59:50</timestamp>
+    <timestamp>2021-5-25T6:32:43</timestamp>
     <pin polarity="Input" x="0" y="-32" name="we(1:0)" />
     <pin polarity="Output" x="384" y="-32" name="wy(3:0)" />
     <graph>
